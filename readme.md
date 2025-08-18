@@ -13,7 +13,7 @@
 
 - Fast API, sqlite3(벡엔드)
 
-[Transformer](https://poloclub.github.io/transformer-explainer/)
-[CNN](https://poloclub.github.io/cnn-explainer/)
+- [Transformer](https://poloclub.github.io/transformer-explainer/)
+- [CNN](https://poloclub.github.io/cnn-explainer/)
 
 ### [부교재: 딥 러닝을 이용한 자연어 처리 입문](https://wikidocs.net/book/2155)
