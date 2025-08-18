@@ -13,7 +13,7 @@
 
 - Fast API, sqlite3(벡엔드)
 
-
+- [Deep Learning with Python](https://github.com/fchollet/deep-learning-with-python-notebooks)
 - [Dimension Reduction](https://dimensionality-reduction-293e465c2a3443e8941b016d.vercel.app/)
 - [Transformer](https://poloclub.github.io/transformer-explainer/)
 - [CNN](https://poloclub.github.io/cnn-explainer/)
