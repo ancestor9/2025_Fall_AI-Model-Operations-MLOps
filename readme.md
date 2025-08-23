@@ -1,17 +1,15 @@
-## Sylabus
-
 ## 교과목 내용
+### 1. Backend & Frontend Development (15시간)
+- HTTP, TCP/IP, Client-Server Architecture
+- Modern Web Architecture
+- Fast API, Database(sqlite3) & Streamlit, gradio with ngrok
+- Mini project (데이터수집-분석-예측 web application publishing)
+### 2. Backend & Frontend Development
 - 선형대수(Linear Algebra)
-  
 - 선형대수와 regression 표현
-
 - logistic regression과 deep learning
 
-- Modern Web Architecture
 
-- Streamlit, gradio(프론트엔드), ngrok
-
-- Fast API, sqlite3(벡엔드)
 - [Dimension Reduction](https://dimensionality-reduction-293e465c2a3443e8941b016d.vercel.app/)
 - [Transformer](https://poloclub.github.io/transformer-explainer/)
 - [CNN](https://poloclub.github.io/cnn-explainer/)
