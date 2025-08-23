@@ -11,7 +11,7 @@
 - Deep Learning 이해 및 실습
 - RAG기반의 AI 서비스 만들기 (google gemini)
 - Mini project 2
-#### 참고교재
+#### 참고 교재
 - [Dimension Reduction](https://dimensionality-reduction-293e465c2a3443e8941b016d.vercel.app/)
 - [Transformer](https://poloclub.github.io/transformer-explainer/)
 - [CNN](https://poloclub.github.io/cnn-explainer/)
