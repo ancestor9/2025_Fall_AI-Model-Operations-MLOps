@@ -19,3 +19,8 @@
 - 공인 IP (Cellular, 직접 랜선 포트에 연결된 공유기를 통해 나가는 주소, 바로 기지국에 연결),
 - 사설 IP (공유기를 통해 배분된 Wi-fi 내 기기들)
 - 인터넷에서 IP 주소확인, CMD화면에서 ipconfig, 파이썬코드로 공인/사설 IP 확인하는 프로그래밍
+7. client에서 server의 파일을 다운로드하는 과정에서 발생하는 모든 상황을 순차적으로 설명해줘. 다음 내용을 포함하여야 한다.
+- buffer, packet, segment, memory
+- TCP/IP, Network Interface card
+- socket 프로그램
+- client에서 파일다운로드가 지연되는 이유 등등
