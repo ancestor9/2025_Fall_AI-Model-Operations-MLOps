@@ -16,13 +16,13 @@
 4. Wi-Fi, Cellular는 뭐지
 5. IP 주소는 네트워크 상에서 유일하게 식별할 수 있는 주소구나!
 6. IP의 종류
-- 공인 IP (Cellular, 직접 랜선 포트에 연결된 공유기를 통해 나가는 주소, 바로 기지국에 연결),
-- 사설 IP (공유기를 통해 배분된 Wi-fi 내 기기들)
-- 인터넷에서 IP 주소확인, CMD화면에서 ipconfig, 파이썬코드로 공인/사설 IP 확인하는 프로그래밍
+      - 공인 IP (Cellular, 직접 랜선 포트에 연결된 공유기를 통해 나가는 주소, 바로 기지국에 연결),
+      - 사설 IP (공유기를 통해 배분된 Wi-fi 내 기기들)
+      - 인터넷에서 IP 주소확인, CMD화면에서 ipconfig, 파이썬코드로 공인/사설 IP 확인하는 프로그래밍
 6. TCP와 UDP를 기반으로 클라이언트와 서버의 통신네크워크 프로그램 만들기
 7. client에서 server의 파일을 다운로드하는 과정에서 발생하는 모든 상황을 순차적으로 설명해줘. 다음 내용을 포함하여야 한다.
-- buffer, packet, segment, memory
-- TCP/IP, Network Interface card
-- socket 프로그램
-- 클라이언트와 서버의 통신 메시지, 3 shakes
-- 파일다운로드가 지연되는 이유 등등
+      - buffer, packet, segment, memory
+      - TCP/IP, Network Interface card
+      - socket 프로그램
+      - 클라이언트와 서버의 통신 메시지, 3 shakes
+      - 파일다운로드가 지연되는 이유 등등
