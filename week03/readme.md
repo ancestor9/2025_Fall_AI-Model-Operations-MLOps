@@ -13,5 +13,5 @@
 <img src="https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture5.png" width="800" height="600">
         - source: https://www.simform.com/blog/web-application-architecture/
 
-## 2. Fast API
+## 3. Fast API
 - https://fastapi.tiangolo.com/ko/
