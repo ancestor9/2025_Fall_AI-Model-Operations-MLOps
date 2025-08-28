@@ -1,7 +1,7 @@
 ## 3주차에 배울 내용
 ## 1. 암호화
 - Encoding, Decoding
-- ![rsa online](https://www.devglan.com/online-tools/rsa-encryption-decryption)
+- [rsa online](https://www.devglan.com/online-tools/rsa-encryption-decryption)
 
 ## 1. MVC (Model-View-Controller) 패턴이란?
 - 소프트웨어 공학에서 사용되는 **모델-뷰-컨트롤러(Model-View-Controller)**라는 디자인 패턴
