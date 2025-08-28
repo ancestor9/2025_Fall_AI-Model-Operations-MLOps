@@ -1,6 +1,6 @@
 ## 2주차 학습 내용
 ### 멀티쓰레드(multithread)
-- 멀티쓰레드(multithread)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘
+- (quest) 멀티쓰레드(multithread)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘
 
 📌 멀티쓰레드(multithread)란?
 - 하나의 프로세스 안에서 여러 개의 실행 단위를 동시에 실행하는 방식.
