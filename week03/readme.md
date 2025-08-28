@@ -1,8 +1,7 @@
 ## 3주차에 배울 내용
 ### 1. 암호화
 - SSL (Secure Sockets Layer), TLS (Transport Layer Security)
-- Encoding, Decoding
-- [rsa online 알고리즘 실습](https://www.devglan.com/online-tools/rsa-encryption-decryption)
+- Encoding, Decoding, [rsa online 알고리즘 실습](https://www.devglan.com/online-tools/rsa-encryption-decryption)
 - 
 
 ### 2. MVC (Model-View-Controller) 패턴이란?
