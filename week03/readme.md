@@ -11,7 +11,7 @@
 
 <img src="https://tecoble.techcourse.co.kr/static/c73f913a7c220ec8cb3ee9a8579468b4/73a7d/mvc.avif" width="600" height="500">
         - source : https://tecoble.techcourse.co.kr/post/2021-04-26-mvc/
-
+- Can you recognize model, view, controller in the below playing Logo picture? 
 ![](https://images.unsplash.com/photo-1575364289437-fb1479d52732?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fCVFQiU4NiU4MCVFQiU4QiVBNHxlbnwwfHwwfHx8MA%3D%3D)
 
 ### 3. Modern Web Architecture
