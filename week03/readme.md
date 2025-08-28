@@ -10,7 +10,7 @@
 <img src="https://tecoble.techcourse.co.kr/static/c73f913a7c220ec8cb3ee9a8579468b4/73a7d/mvc.avif" width="600" height="500">
         - source : https://tecoble.techcourse.co.kr/post/2021-04-26-mvc/
 
-<img src="https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture5.png" width="600" height="500">
+<img src="https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture5.png" width="800" height="600">
         - source: https://www.simform.com/blog/web-application-architecture/
 
 ## 2. Fast API
