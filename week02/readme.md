@@ -15,7 +15,7 @@
 > socket()으로 클라이언트 소켓 생성 > connect()로 서버에 연결 요청 > 서버와 메시지를 송수신
 
 
-### 1.멀티프로세싱(multiprocessing)
+### 2.멀티프로세싱(multiprocessing)
 - (quest) 멀티프로세싱(multiprocessing)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘.
 
 📌 멀티프로세싱(multiprocessing)이란?
