@@ -11,3 +11,4 @@
         - source: https://www.simform.com/blog/web-application-architecture/
 
 ## 2. Fast API
+- https://fastapi.tiangolo.com/ko/
