@@ -4,7 +4,8 @@
 - Modern Web Architecture
 - Fast API, Database(sqlite3) & Streamlit, gradio with ngrok
 - Mini project 1(데이터수집-분석-예측 web application publishing)
-### 2. AI를 위한 기초 수학 및 딥려닝이해(20시간)
+  
+### 2. AI를 위한 기초 수학 및 딥려닝이해 (20시간)
 - 선형대수, tensor operation(행렬연산 등)
 - Bayseian 확률이론(Naive Baysian, Bayesain Neural N/W 등)
 - 단순회귀분석, 다중회귀분석, Perceptron 등 선형대수 이해
