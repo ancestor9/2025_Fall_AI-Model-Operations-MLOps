@@ -55,3 +55,6 @@
 - 종료 : 클라이언트가 "exit" 입력 시 연결 종료
 
 ### 3.멀티쓰레드(multithread)과 멀티프로세싱(multiprocessing)의 차이점과 어떤 작업에 적합한가?
+
+
+![](https://gmlwjd9405.github.io/images/web/static-vs-dynamic.png)
