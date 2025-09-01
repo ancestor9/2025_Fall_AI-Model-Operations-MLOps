@@ -12,12 +12,12 @@
 ### 1.2. 간단한 웹페이지 만들고 8000번 port에서 실행
 - quest : "간단한 HTML을 만들고 comand창에서 http server로 작동" @ VSCODE
 ### 1.3 WAS(Web Application Server)
-    | 구분    | 웹 서버(Web Server)                 | WAS(Web Application Server)           |
-    | ----- | -------------------------------- | ------------------------------------- |
-    | 역할    | 정적 콘텐츠 제공 (HTML, CSS, JS, 이미지 등) | 동적 콘텐츠 제공 (DB 조회, 로그인 처리, 게시판 글 등록 등) |
-    | 예시    | Apache, Nginx, IIS               | Tomcat, JBoss, WebLogic, WebSphere    |
-    | 동작 방식 | 요청 → 파일 찾아서 응답                   | 요청 → 로직 실행 + DB연동 → 결과 생성 → 응답        |
-    | 사용 목적 | 빠르고 가벼운 정적 자원 처리                 | 복잡한 로직 실행 및 동적 페이지 생성                 |
+    | 구분    | 웹 서버(Web Server)                   | WAS(Web Application Server)                             |
+    | ------- | ------------------------------------- | ------------------------------------------------------- |
+    | 역할    | 정적콘텐츠 제공(HTML,CSS,JS,이미지 등) | 동적 콘텐츠 제공 (DB조회,로그인 처리, 게시판 글 등록 등) |
+    | 예시    | Apache, Nginx, IIS                    | Tomcat, JBoss, WebLogic, WebSphere                      |
+    | 동작 방식 | 요청 → 파일 찾아서 응답              | 요청 → 로직 실행 + DB연동 → 결과 생성 → 응답             |
+    | 사용 목적 | 빠르고 가벼운 정적 자원 처리         | 복잡한 로직 실행 및 동적 페이지 생성                     |
 
 ## 2. 병렬성(Parallelism) 과 동시성(Concurrency)
 ### 2.1. 멀티쓰레드(multithread)
