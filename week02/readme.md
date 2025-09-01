@@ -1,6 +1,18 @@
 ## 2주차 학습 내용
+## 1. 웹서버(Web Server)
+### 1.1. 파이썬 http server 이해 및 작동
+- 클라이언트(사용자 브라우저 등)로부터 요청을 받아 웹 페이지나 데이터를 응답하는 소프트웨어 또는 하드웨어 시스템
+- 사용자가 주소창에 URL을 입력했을 때 웹 서버가 해당 요청을 처리해 결과(HTML, 이미지, JSON 등)를 돌려주는 역할
+- 실습 : "간단한 HTML을 만들고 comand창에서 http server로 작동" @ VSCODE
+                - from http.server import HTTPServer, SimpleHTTPRequestHandler
+                - # 8000번 포트에서 실행되는 간단한 웹서버
+                - server = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)
+                - print("웹서버 실행 중: http://localhost:8000")
+                - server.serve_forever()
 
-### 1. 멀티쓰레드(multithread)
+  
+## 2. 병렬성(Parallelism) 과 동시성(Concurrency)
+### 2.1. 멀티쓰레드(multithread)
 - (quest) 멀티쓰레드(multithread)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘
 
 📌 멀티쓰레드(multithread)란?
@@ -15,7 +27,7 @@
 > socket()으로 클라이언트 소켓 생성 > connect()로 서버에 연결 요청 > 서버와 메시지를 송수신
 
 
-### 2.멀티프로세싱(multiprocessing)
+### 2.2. 멀티프로세싱(multiprocessing)
 - (quest) 멀티프로세싱(multiprocessing)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘.
 
 📌 멀티프로세싱(multiprocessing)이란?
