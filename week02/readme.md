@@ -4,13 +4,11 @@
 - 클라이언트(사용자 브라우저 등)로부터 요청을 받아 웹 페이지나 데이터를 응답하는 소프트웨어 또는 하드웨어 시스템
 - 사용자가 주소창에 URL을 입력했을 때 웹 서버가 해당 요청을 처리해 결과(HTML, 이미지, JSON 등)를 돌려주는 역할
 - 파이썬의 http server 모듈로 localhost:8000에 접속했을 때 해당 디렉토리의 파일을 웹으로 확인하는 코드 만들기
-- ---------------------------------------------------------------------------------------------------------
 -               from http.server import HTTPServer, SimpleHTTPRequestHandler
                 # 8000번 포트에서 실행되는 간단한 웹서버
                 server = HTTPServer(('localhost', 8000), SimpleHTTPRequestHandler)
                 print("웹서버 실행 중: http://localhost:8000")
                 server.serve_forever()
--------------------------------------------------------------------------------------------------------------
 ### 1.2. 간단한 웹페이지 만들고 8000번 port에서 실행
 - quest : "간단한 HTML을 만들고 comand창에서 http server로 작동" @ VSCODE
 ### 1.3 WAS(Web Application Server)
