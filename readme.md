@@ -3,7 +3,7 @@
 - HTTP, TCP/IP, Client-Server Architecture
 - Modern Web Architecture
 - Fast API, Database(sqlite3) & Streamlit, gradio with ngrok
-- Mini project 1(데이터수집-분석-예측 web application publishing)
+- Mini project 1(데이터수집-분석-예측, 게시판 만들기 등)
   
 ### 2. AI를 위한 기초 수학 및 딥려닝이해 (20시간)
 - 선형대수, tensor operation(행렬연산 등)
