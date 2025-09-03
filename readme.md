@@ -9,7 +9,7 @@
 - 선형대수 및 확률 이론(Bayseian Theorm) --> - [Essential_Math_for_Data_Science](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024%20-%20F/CSE%20%20IT%20AIDS%20ML/Essential_Math_for_Data_Science_Take_Control_of_Your_Data_with_Fundamental.pdf)
 - 딥러닝을 위한 tensor operation(행렬연산 등)
 - 단순회귀분석, 다중회귀분석, Perceptron 등 선형대수 이해
-- Deep Learning, LLM API 개발 이해(google gemini)
+- Deep Learning, LLM API 개발 이해_[Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
 - Mini project 2 (LLM을 이용한 서비스 만들기)
 
 #### 참고 자료
