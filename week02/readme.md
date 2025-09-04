@@ -19,7 +19,7 @@
     | 동작 방식 | 요청 → 파일 찾아서 응답              | 요청 → 로직 실행 + DB연동 → 결과 생성 → 응답             |
     | 사용 목적 | 빠르고 가벼운 정적 자원 처리         | 복잡한 로직 실행 및 동적 페이지 생성                     |
 
-## 2. 병렬성(Parallelism) 과 동시성(Concurrency)
+## 3. 병렬성(Parallelism) 과 동시성(Concurrency)
 ### 2.1. 멀티쓰레드(multithread)
 - (quest) 멀티쓰레드(multithread)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘
 
