@@ -37,7 +37,6 @@
 - Client
 > socket()으로 클라이언트 소켓 생성 > connect()로 서버에 연결 요청 > 서버와 메시지를 송수신
 
-
 ### 2.2. 멀티프로세싱(multiprocessing)
 - (quest) 멀티프로세싱(multiprocessing)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘.
 
@@ -53,7 +52,7 @@
        데이터 송수신 : 클라이언트는 메시지를 보내고, 서버는 받은 데이터를 그대로 돌려주는(에코 서버) 방식으로 동작
        종료 : 클라이언트가 "exit" 입력 시 연결 종료
 
-### 3.멀티쓰레드(multithread)과 멀티프로세싱(multiprocessing)의 차이점과 어떤 작업에 적합한가?
+### 2.3. 멀티쓰레드(multithread)과 멀티프로세싱(multiprocessing)의 차이점과 어떤 작업에 적합한가?
 
 
 ![Web Server & WAS](https://gmlwjd9405.github.io/images/web/static-vs-dynamic.png)
