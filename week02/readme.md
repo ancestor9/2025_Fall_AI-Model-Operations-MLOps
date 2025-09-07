@@ -55,7 +55,7 @@
        종료 : 클라이언트가 "exit" 입력 시 연결 종료
 
 ### 2.3. 멀티쓰레드(multithread)과 멀티프로세싱(multiprocessing)의 차이점과 어떤 작업에 적합한가?
--            - Application Data
+-           - Application Data
                ↓
             - [TCP Segment: Port 정보 포함]
                ↓
