@@ -22,6 +22,7 @@
     | 사용 목적 | 빠르고 가벼운 정적 자원 처리         | 복잡한 로직 실행 및 동적 페이지 생성                     |
 ### 1.4. HTTP와 REST API
 - HTTPS(HyperText Transfer Protocol Secure)
+- HTTPS = "HTTP + 보안(SSL/TLS)", 사용자가 안전하게 웹을 이용할 수 있도록 하는 표준 통신 방식
 
 ## 2. 병렬성(Parallelism) 과 동시성(Concurrency)
 ### 2.1. 멀티쓰레드(multithread)
