@@ -64,5 +64,5 @@
             - [IP Packet: IP 주소 포함]
                ↓
             - [Ethernet Frame: MAC 주소 포함 → 물리적으로 전송]
-- https://itnext.io/tcp-ip-osi-and-tcp-ip-models-tcp-packets-linux-sockets-and-ports-2640ff9155c6
+- [TCP/IP] https://itnext.io/tcp-ip-osi-and-tcp-ip-models-tcp-packets-linux-sockets-and-ports-2640ff9155c6
 ![Web Server & WAS](https://gmlwjd9405.github.io/images/web/static-vs-dynamic.png)
