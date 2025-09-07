@@ -55,6 +55,6 @@
        종료 : 클라이언트가 "exit" 입력 시 연결 종료
 
 ### 2.3. 멀티쓰레드(multithread)과 멀티프로세싱(multiprocessing)의 차이점과 어떤 작업에 적합한가?
-
+- Segment, Packet, Frame
 - https://itnext.io/tcp-ip-osi-and-tcp-ip-models-tcp-packets-linux-sockets-and-ports-2640ff9155c6
 ![Web Server & WAS](https://gmlwjd9405.github.io/images/web/static-vs-dynamic.png)
