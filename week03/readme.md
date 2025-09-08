@@ -22,5 +22,7 @@
 
 ## 4. Fast API
 - https://fastapi.tiangolo.com/ko/
-- 가상환경 생성과 Fast API 설치
+- 가상환경 생성과 Fast API 설치(웹서버 uvicorn)
+- Fast API 시작
+- Path와 Query Parameter 이해
 - Pydantic 모듈
