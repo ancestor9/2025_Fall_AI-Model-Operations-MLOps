@@ -18,7 +18,7 @@
 ![](https://images.unsplash.com/photo-1575364289437-fb1479d52732?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fCVFQiU4NiU4MCVFQiU4QiVBNHxlbnwwfHwwfHx8MA%3D%3D)
 
 ### 3. Modern Web Architecture
-<img src="https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture5.png" width="800" height="600">
+<img src="https://www.simform.com/wp-content/uploads/2021/05/webapparchitecture5.png" idth="600" height="500">
 
 ## 4. Fast API
 - https://fastapi.tiangolo.com/ko/
