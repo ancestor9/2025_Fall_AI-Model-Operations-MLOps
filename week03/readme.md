@@ -20,3 +20,5 @@
 
 ## 3. Fast API
 - https://fastapi.tiangolo.com/ko/
+- 가상환경 생성과 Fast API 설치
+- Pydantic 모듈
