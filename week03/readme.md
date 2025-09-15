@@ -29,8 +29,8 @@
   - [동기/비동기방식](https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/week03/1022_%EB%8F%99%EA%B8%B0_%EB%B9%84%EB%8F%99%EA%B8%B0%EB%B0%A9%EC%8B%9D.ipynb)
   - [ngrok](https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/week03/1126_gradio_Gracias.ipynb)
 - mini 과제 : faker 모듈을 사용하여 10명 기본정보(이름, 주소, 전화번호, 이메일, 직업, 나이)를 생성하고 이름, 나이 순서대로 정렬하여 조회하는 화면을 만들라
-- 가상환경 생성과 Fast API 설치(웹서버 uvicorn)
 ### 4.2. Fast API 시작
+- 가상환경 생성과 Fast API 설치(웹서버 uvicorn) -> Optional
 - Path와 Query Parameter 이해
 -     REST API 설계 시 path는 “무엇(리소스)”을 요청하는지, query는 “어떻게(조건, 옵션)”을 요청하는지 전달하는 방식으로 구분해 활용
 - Pydantic 모듈 (Request Body, POST Method)
