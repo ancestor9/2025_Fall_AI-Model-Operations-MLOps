@@ -22,6 +22,7 @@
 
 ## 4. Fast API
 - https://fastapi.tiangolo.com/ko/
+- (Quiz) Fast API는 MVC에서 어디를 담당하는가?
 ### 4.1. 사전 지식
   - Decorator 함수 : 다른 함수를 wrapping하는 함수
   - if __name__ == __main__
