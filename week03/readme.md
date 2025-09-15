@@ -27,6 +27,7 @@
   - if __name__ == __main__
   - [gradio playground](https://www.gradio.app/playground)
   - [동기/비동기방식](https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/week03/1022_%EB%8F%99%EA%B8%B0_%EB%B9%84%EB%8F%99%EA%B8%B0%EB%B0%A9%EC%8B%9D.ipynb)
+  - [ngrok](https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/week03/1126_gradio_Gracias.ipynb)
 - 가상환경 생성과 Fast API 설치(웹서버 uvicorn)
 - Fast API 시작
 - Path와 Query Parameter 이해
