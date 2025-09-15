@@ -1,4 +1,6 @@
 ## 2주차 학습 내용
+- 함수, 모듈, 라이브러리, 패키지 복습
+
 ## 1. 웹서버(Web Server)
 ### 1.1. 파이썬 http server
 - 클라이언트(사용자 브라우저 등)로부터 요청을 받아 웹 페이지나 데이터를 응답하는 소프트웨어 또는 하드웨어 시스템
@@ -11,13 +13,16 @@
                 server.serve_forever()
 ### 1.2. 간단한 웹페이지 만들고 8000번 port에서 실행
 - quest : "간단한 HTML을 만들고 comand창에서 http server로 작동" @ VSCODE
-### 1.3 WAS(Web Application Server)
+### 1.3. WAS(Web Application Server)
     | 구분    | 웹 서버(Web Server)                   | WAS(Web Application Server)                             |
     | ------- | ------------------------------------- | ------------------------------------------------------- |
     | 역할    | 정적콘텐츠 제공(HTML,CSS,JS,이미지 등) | 동적 콘텐츠 제공 (DB조회,로그인 처리, 게시판 글 등록 등) |
     | 예시    | Apache, Nginx, IIS                    | Tomcat, JBoss, WebLogic, WebSphere                      |
     | 동작 방식 | 요청 → 파일 찾아서 응답              | 요청 → 로직 실행 + DB연동 → 결과 생성 → 응답             |
     | 사용 목적 | 빠르고 가벼운 정적 자원 처리         | 복잡한 로직 실행 및 동적 페이지 생성                     |
+### 1.4. HTTP와 REST API
+- HTTPS(HyperText Transfer Protocol Secure)
+- HTTPS = "HTTP + 보안(SSL/TLS)", 사용자가 안전하게 웹을 이용할 수 있도록 하는 표준 통신 방식
 
 ## 2. 병렬성(Parallelism) 과 동시성(Concurrency)
 ### 2.1. 멀티쓰레드(multithread)
@@ -34,7 +39,6 @@
 - Client
 > socket()으로 클라이언트 소켓 생성 > connect()로 서버에 연결 요청 > 서버와 메시지를 송수신
 
-
 ### 2.2. 멀티프로세싱(multiprocessing)
 - (quest) 멀티프로세싱(multiprocessing)를 설명해줘. TCP IP방식으로 client server 아키텍쳐로 예제 코드를 주고 주석과 함께 동작방식을 알려줘.
 
@@ -50,7 +54,16 @@
        데이터 송수신 : 클라이언트는 메시지를 보내고, 서버는 받은 데이터를 그대로 돌려주는(에코 서버) 방식으로 동작
        종료 : 클라이언트가 "exit" 입력 시 연결 종료
 
-### 3.멀티쓰레드(multithread)과 멀티프로세싱(multiprocessing)의 차이점과 어떤 작업에 적합한가?
+### 2.3. 멀티쓰레드(multithread)과 멀티프로세싱(multiprocessing)의 차이점과 어떤 작업에 적합한가?
 
-
+### 2.4. 데이터 전송 mechanism (TCP/IP 4 Layer)
+-           - Application Data
+               ↓
+            - [TCP Segment: Port 정보 포함]
+               ↓
+            - [IP Packet: IP 주소 포함]
+               ↓
+            - [Ethernet Frame: MAC 주소 포함 → 물리적으로 전송]
+- [TCP/IP] https://itnext.io/tcp-ip-osi-and-tcp-ip-models-tcp-packets-linux-sockets-and-ports-2640ff9155c6
+- 자료구조, 메모리 구조, 알고리즘
 ![Web Server & WAS](https://gmlwjd9405.github.io/images/web/static-vs-dynamic.png)
