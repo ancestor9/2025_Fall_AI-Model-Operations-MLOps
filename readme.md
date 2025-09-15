@@ -12,6 +12,9 @@
 - Deep Learning, LLM API 개발 이해 --> [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
 - Mini project 2 (LLM을 이용한 서비스 만들기)
 
+### 3. 과제 제출 (~11.3)
+- 고과목과 실습실 배정 및 시각화(학점 80%)
+
 #### 참고 자료
 - [Essential Math for Data Science, Thomas Nield, O'RELLY](http://103.203.175.90:81/fdScript/RootOfEBooks/E%20Book%20collection%20-%202024%20-%20F/CSE%20%20IT%20AIDS%20ML/Essential_Math_for_Data_Science_Take_Control_of_Your_Data_with_Fundamental.pdf)
 - [Dimension Reduction](https://dimensionality-reduction-293e465c2a3443e8941b016d.vercel.app/)
