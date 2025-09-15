@@ -34,8 +34,3 @@
             - mini 과제 1 : Colab 에서 faker 모듈을 사용하여 10명 기본정보(이름, 주소, 전화번호, 이메일, 직업, 나이)를 생성하고 이름, 나이 순서대로 정렬하여 조회하는 화면을 만들라
             - mini 과제 2 : VScode에서 프로젝트 요구사항을 만들어 mini 과제 1의 기능을 기술한 후 간단한 코드를 생성하라
   **:---> (필수사항) 각 자 github를 만들어 교과목에서 실습한 코드를 일자뱔로 저장하라(기말과제에 학점 부여)**
-### 4.2. Fast API 시작
-- 가상환경 생성과 Fast API 설치(웹서버 uvicorn) -> Optional
-- Path와 Query Parameter 이해
--     REST API 설계 시 path는 “무엇(리소스)”을 요청하는지, query는 “어떻게(조건, 옵션)”을 요청하는지 전달하는 방식으로 구분해 활용
-- Pydantic 모듈 (Request Body, POST Method)
