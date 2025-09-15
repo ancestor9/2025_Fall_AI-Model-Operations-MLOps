@@ -22,6 +22,9 @@
 
 ## 4. Fast API
 - https://fastapi.tiangolo.com/ko/
+- 사전 지식
+  . Decorator 함수 : 다른 함수를 wrapping하는 함수
+  . if __name__ == __main__
 - 가상환경 생성과 Fast API 설치(웹서버 uvicorn)
 - Fast API 시작
 - Path와 Query Parameter 이해
