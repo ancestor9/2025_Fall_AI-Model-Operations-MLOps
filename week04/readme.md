@@ -10,6 +10,7 @@
 - MVC 개념으로 파일을 나누기
 - "evertrail" 폴더 전체적인 구조 이해하기
 - Getting Started with Fast API
+- [외부에서 로컬서버 접속하기](https://velog.io/@kya754/ngrok-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 #### 4.3. Fast API 시작
 - 가상환경 생성과 Fast API 설치(웹서버 uvicorn) -> Optional
