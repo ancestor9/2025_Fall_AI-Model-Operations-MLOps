@@ -5,7 +5,7 @@
 ![](https://blog.kakaocdn.net/dna/B1ncV/btsEWyvMlHw/AAAAAAAAAAAAAAAAAAAAAL45lRSwnfiECq9bA3maLS9bNvJKyTAdK1qRYhj5CdIk/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=4W7bFYDbL3y%2BtTjTYJAu2voD%2F2Y%3D)
 
 #### 4.2. Ever Tried?
-- 내가 만들고 싶은 것을 정리하고 colab에서 gemini LLM 과 재미나이게 코딩
+- 내가 만들고 싶은 것(my neeeds, ploblem, requirements, etc)을 정리하고 colab에서 gemini LLM 과 재미나이게 코딩
 - py 파일로 다운로드
 - MVC 개념으로 파일을 나누기
 - "evertrail" 폴더 전체적인 구조 이해하기
