@@ -11,6 +11,7 @@
 - "evertrail" 폴더 전체적인 구조 이해하기
 - Getting Started with Fast API
 - [ngrok 사용하기 - 외부에서 Localhost 접속하는 방법](https://velog.io/@kya754/ngrok-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+- python에서 API keys 저장하고 사용하는 방법(colab, vscode)
 
 #### 4.3. Fast API 시작
 - 가상환경 생성과 Fast API 설치(웹서버 uvicorn) -> Optional
