@@ -4,7 +4,7 @@
   
 ### 2. FAST API (25시간)
 - Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
-- Mini project 1 (데이터수집-분석-예측, 게시판 만들기 등)
+- Mini project 1 (데이터수집-분석-예측, scikit-learn의 toy data로 예측 웹 서비스 만들기 등)
   
 ### 2. 생성형 AI로 chatbot 만들기 (11시간)
 - Deep Learning, LLM API 개발 이해 --> [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
