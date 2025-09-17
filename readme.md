@@ -1,8 +1,7 @@
 ## 교과목 내용
 ### 1. 네트워크 통신과 FAST API (35시간)
 - HTTP, TCP/IP, Client-Server Architecture
-- Modern Web Architecture
-- Fast API, Database(sqlite3) & gradio with ngrok
+- Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
 - Mini project 1 (데이터수집-분석-예측, 게시판 만들기 등)
   
 ### 2. 생성형 AI로 chatbot 만들기 (10시간)
