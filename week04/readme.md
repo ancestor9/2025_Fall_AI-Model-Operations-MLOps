@@ -1,5 +1,5 @@
 ### 4.1. Modern Web
-- pdf 참고
+- pdf 참고(1. Modern Web.pdf)
 
 ### 4.1. http 구조 Review
 #### 4.1.1. http request 구조 (Client ----request----> Server)
