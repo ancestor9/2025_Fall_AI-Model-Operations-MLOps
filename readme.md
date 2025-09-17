@@ -1,8 +1,8 @@
 ## 교과목 내용
 ### 1. 네트워크 통신 (9시간)
-
-### 2. FAST API (25시간)
 - HTTP, TCP/IP, Client-Server Architecture
+  
+### 2. FAST API (25시간)
 - Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
 - Mini project 1 (데이터수집-분석-예측, 게시판 만들기 등)
   
