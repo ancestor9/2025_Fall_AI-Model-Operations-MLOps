@@ -7,6 +7,7 @@
 ![](https://blog.kakaocdn.net/dna/B1ncV/btsEWyvMlHw/AAAAAAAAAAAAAAAAAAAAAL45lRSwnfiECq9bA3maLS9bNvJKyTAdK1qRYhj5CdIk/img.png?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&expires=1759244399&allow_ip=&allow_referer=&signature=4W7bFYDbL3y%2BtTjTYJAu2voD%2F2Y%3D)
 
 #### 4.2. Fast API 시작
+- FastAPI 맛보기 : 왜 필요한가? : Introduction_to_Fast_API.ipynb
 - 가상환경 생성과 Fast API 설치(웹서버 uvicorn) -> Optional
 - The main paragraph at the top describes a very small FastAPI application with a single endpoint, which is in the web layer that only handles web requests and responses. It then suggests the basic Python packages to use first. The below bulleted list that follows details these packages and their installation commands:
 -          - FastAPI framework: pip install fastapi
