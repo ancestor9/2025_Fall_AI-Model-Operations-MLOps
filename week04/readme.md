@@ -8,7 +8,7 @@
 
 #### 4.2. Fast API 시작
 - [FastAPI 맛보기](https://fastapi.tiangolo.com/ko/)
-- [Firebase](https://www.youtube.com/watch?v=A1Ix7xzjtkM)
+- [Firebase](https://www.youtube.com/watch?v=0A45kpsOCPY)
 -     Firebase Studio에서 VIBE 코딩
       Firebase는 모바일 및 웹 애플리케이션을 개발하기 위한 구글의 플랫폼
 - 가상환경 생성과 Fast API 설치(웹서버 uvicorn) -> Optional
