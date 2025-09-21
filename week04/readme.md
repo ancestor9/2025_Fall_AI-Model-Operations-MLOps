@@ -9,7 +9,6 @@
 #### 4.2. Fast API 시작
 - FastAPI 맛보기 : 왜 필요한가? ----> Firebase Studio 에서 VIBE 코딩
 - 가상환경 생성과 Fast API 설치(웹서버 uvicorn) -> Optional
-- The main paragraph at the top describes a very small FastAPI application with a single endpoint, which is in the web layer that only handles web requests and responses. It then suggests the basic Python packages to use first. The below bulleted list that follows details these packages and their installation commands:
 -          - FastAPI framework: pip install fastapi
            - Uvicorn web server: pip install uvicorn
            - HTTPie text web client: pip install httpie
