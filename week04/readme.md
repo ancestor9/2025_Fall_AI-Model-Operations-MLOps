@@ -18,4 +18,4 @@
 - Path와 Query Parameter 이해
 -     REST API 설계 시 path는 “무엇(리소스)”을 요청하는지, query는 “어떻게(조건, 옵션)”을 요청하는지 전달하는 방식으로 구분해 활용
 - Head, Body
--            Pydantic 모듈 (Request Body, POST Method)
+-     사전형, JSON, Pydantic 모듈 (Request/Response Body, POST Method)
