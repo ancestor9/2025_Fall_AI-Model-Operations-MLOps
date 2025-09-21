@@ -5,7 +5,7 @@
 ### 2. FAST API (25시간)
 - Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
 - Mini project 1 (데이터수집-분석-예측, scikit-learn의 toy data로 예측 웹 서비스 만들기 등)
--     - Guhub에 제출할 숙제
+-     - Guhub에 제출할 Homwworks
       - homework_01: 고객이 온라인 상품(상품명, 가격, 설명 등)에 대해 가격 견적을 요청하면 세금 10%를 포함한 세후 가격을 제시하라
 
   
