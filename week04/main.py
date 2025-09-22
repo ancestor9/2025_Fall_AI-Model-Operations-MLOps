@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 from typing import Union
 
 from fastapi import FastAPI
@@ -11,10 +11,15 @@ def read_root():
     return {"Hello": "World"}
 
 
+
+
+
+
+
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q}
-=======
+#=======
 # # 필요한 라이브러리들을 불러옵니다.
 # from typing import Union
 # from fastapi import FastAPI, HTTPException
@@ -158,4 +163,3 @@ def download_items_csv():
         media_type='text/csv',
         headers={"Content-Disposition": "attachment; filename=items.csv"}
     )
->>>>>>> 910ef2712fe2962ec0b23271319dab0e54804069
