@@ -1,12 +1,11 @@
 import requests
 
-r = requests.get('http://localhost:8000/hi')
+import httpx
+r = httpx.get('http://localhost:8000')
 print(r.json())
 
-
-# r = requests.post('http://localhost:8000/hi', json={"who": "Alice"})
+# r = requests.get('http://localhost:8000/hi')
 # print(r.json())
 
-# import httpx
-# r = httpx.get('http://localhost:8000')
+# r = requests.post('http://localhost:8000/hi', json={"who": "Alice"})
 # print(r.json())
