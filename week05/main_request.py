@@ -1,14 +1,59 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Response, status
+
+app = FastAPI()
+
+# 딕셔너리 반환:
+# FastAPI가 자동으로 상태 코드를 200 OK로 설정하고, 
+# JSON 콘텐츠 타입 헤더를 추가하여 HTTPResponse를 생성합니다.
+@app.get("/")
+def read_root():
+    return {"message": "Hello World"}
+
+# 상태 코드와 헤더 직접 설정:
+# Response 객체를 사용해 HTTP 응답을 명시적으로 제어합니다.
+@app.get("/custom-response", status_code=status.HTTP_201_CREATED)
+def custom_response(response: Response):
+    # 헤더를 직접 설정할 수 있습니다.
+    response.headers["X-Custom-Header"] = "This is a custom header"
+    
+    # 이 딕셔너리도 자동으로 JSON 바디가 됩니다.
+    return {"status": "success"}
+
+# 바이너리 데이터(파일) 반환:
+# FileResponse를 사용해 파일을 HTTP 응답으로 보냅니다.
+from fastapi.responses import FileResponse
+
+@app.get("/image")
+def get_image():
+    # 'star.png' 파일을 HTTP 응답의 바디로 보냅니다.
+    # FastAPI가 Content-Disposition 헤더 등을 자동으로 설정합니다.
+    return FileResponse(r"D:\2025_Fall_AI-Model-Operations-MLOps\스크린샷 2025-09-20 130257.png", media_type="image/png")
+
+# HTML 페이지 반환:
+# HTMLResponse를 사용해 HTML 콘텐츠를 보냅니다.
+from fastapi.responses import HTMLResponse
+
+@app.get("/html", response_class=HTMLResponse)
+async def read_html():
+    content = """
+    <html>
+        <body>
+            <h1>안녕하세요, FastAPI!</h1>
+            <p>이것은 HTML 응답입니다.</p>
+        </body>
+    </html>
+    """
+    return content
+
 from pydantic import BaseModel
+from fastapi import Request
 
 class Item(BaseModel):
     name: str
     price: float
     description: str | None = None
 
-app = FastAPI()
-
-@app.get("/")
+@app.get("/home")
 async def get_request_info(request: Request):
     client_host = request.client.host
     method = request.method
