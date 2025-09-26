@@ -8,7 +8,7 @@
 - main_CRUD.py, main.py
 - 과제 교과목배정 CRUD : main_course_CRUD.py
 -                - courses_data.csv (Raw Data)
-                 - Input_Output_course.pya (데이터 입출력)
+                 - Input_Output_course.py (데이터 입출력)
 
 ### 3. LLM_gemini API
 - Review Python Syntax : Class & OOP, Buffer & Stream 
