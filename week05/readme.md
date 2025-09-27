@@ -1,9 +1,12 @@
 ## Thing to learn & practice
     1. main_product_customer.py, customer.py, product.py
+       FastAPI, Rouer에 대한 이해
     2. main.py, main_CRUD.py, main_course_CRUD.py, Input_Output_course.py, courses_data.csv
+       CRUD, Pydantic, File I/O
     3. main_server.py, client.py
+       Server-Client 구조 이해
     4. Get_started_LLM_Gemini.ipynb
-main_request.py, main_response.py
+       Class와 객체지향 언어 이해
 
 ### 1. Review what we learned last week
 - Path, Query, Header/Body : main_product_customer
