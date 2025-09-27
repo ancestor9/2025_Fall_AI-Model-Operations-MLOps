@@ -1,8 +1,8 @@
 ## Thing to learn & practice
-1. main_product_customer.py, customer.py, product.py
-2. main.py, main_CRUD.py, main_course_CRUD.py, Input_Output_course.py, courses_data.csv
-3. main_server.py, client.py
-4. Get_started_LLM_Gemini.ipynb
+### 1. main_product_customer.py, customer.py, product.py
+### 2. main.py, main_CRUD.py, main_course_CRUD.py, Input_Output_course.py, courses_data.csv
+### 3. main_server.py, client.py
+### 4. Get_started_LLM_Gemini.ipynb
 main_request.py, main_response.py
 
 ### 1. Review what we learned last week
