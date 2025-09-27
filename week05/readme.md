@@ -9,7 +9,12 @@
 - 과제 교과목배정 CRUD : main_course_CRUD.py
 -                - courses_data.csv (Raw Data)
                  - Input_Output_course.py (데이터 입출력)
+### 3. Client - Server
+- main_server.py <--> client.py
 
-### 3. LLM_gemini API
+### 4. Router
+- main_product_customer.py, product.py, customer.py
+
+### 5. LLM_gemini API
 - Review Python Syntax : Class & OOP, Buffer & Stream 
 - week05/Get_started_LLM-gemini.ipynb
