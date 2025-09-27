@@ -1,7 +1,8 @@
 ## Thing to do
 
 ### 1. Review what we learned last week
-- Path, Query, Header/Body
+- Path, Query, Header/Body : main_product_customer
+- Router : main_product_customer.py, product.py, customer.py
 
 ### 2. CRUD 
 ![CRUD](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlB3dEY4w5O4JKLEO2MS2PrgEnsk3RSkSi5Q&s)
@@ -12,8 +13,7 @@
 ### 3. Client - Server
 - main_server.py <--> client.py
 
-### 4. Router
-- main_product_customer.py, product.py, customer.py
+
 
 ### 5. LLM_gemini API
 - Review Python Syntax : Class & OOP, Buffer & Stream 
