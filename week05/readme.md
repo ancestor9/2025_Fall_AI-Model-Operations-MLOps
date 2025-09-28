@@ -21,6 +21,9 @@
 ### 3. Client - Server
 - main_server.py <--> client.py
 
+### 과제 제출
+- FastAPI_01_과제제출(e-class 과제) : ~ 10월11일까지 깃허브에
+
 ### 4. LLM_gemini API
 - Review Python Syntax : Class & OOP, Buffer & Stream 
 - week05/Get_started_LLM-gemini.ipynb
