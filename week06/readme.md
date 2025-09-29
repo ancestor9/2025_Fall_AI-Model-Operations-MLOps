@@ -1,3 +1,7 @@
+### Jinja2
+- [jinja-templating](https://realpython.com/primer-on-jinja-templating/)
+
+
 ### HTTP Request, Response : main_request.py, main_response.py
 
 ### Fast API with DB
