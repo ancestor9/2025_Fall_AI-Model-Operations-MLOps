@@ -43,7 +43,6 @@ async def redirect_only(comment: str | None = None):
 @app.post("/create_redirect")
 async def create_item(item_id: int = Form(), item_name: str = Form()):
     print(f"item_id: {item_id} item name: {item_name}")
-
     return RedirectResponse(url=f"/resp_html/{item_id}?item_name={item_name}"
                             , status_code=status.HTTP_302_FOUND)
 
