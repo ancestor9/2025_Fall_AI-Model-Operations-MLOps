@@ -1,7 +1,8 @@
 ### 1. API Router Review
 - main_router_controller.py, controller 폴더
   
-### 2. HTTP Request, Response : main_request.py, main_response.py
+### 2. HTTP Request, Response 
+- main_request.py, main_response.py
 
 ### 3. Jinja2
 - [jinja-templating](https://realpython.com/primer-on-jinja-templating/)
