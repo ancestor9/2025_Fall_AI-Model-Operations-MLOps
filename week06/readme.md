@@ -8,6 +8,7 @@
 - [jinja-templating](https://realpython.com/primer-on-jinja-templating/)
   -     templates 폴더 > message1.txt, message2.txt, results.html, results_if.html
         jinja2_excercise.py (jinja2.py 사용은 안됨)
+- [Templates](https://fastapi.tiangolo.com/advanced/templates/)
 - [Bootstrap](https://getbootstrap.com/)
 
 ### 4. Fast API with DB
