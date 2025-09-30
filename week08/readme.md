@@ -8,4 +8,4 @@
 - 이 기능을 사용하면 FastAPI 앱 내부에 Gradio 인터페이스를 직접 통합(mount)
 - 두 서버를 따로 실행할 필요 없이 하나의 Uvicorn 프로세스로 FastAPI API와 Gradio UI를 동시에 서비스할 수 있어 코드가 훨씬 간결해지고 실행이 편리해짐
 - FastAPI 백엔드(api.py)와 Gradio 프론트엔드(app_gradio.py)의 기능을 **하나의 파일(main_mounted.py)**로 합친 간결한 코드
-🚀 Gradio Mount 통합 코드 (main_mounted.py) : train_model.py를 먼저 실행하여 iris_model.pkl 파일이 생성되어 있다는 가정 하에 작동합니다.
+- 🚀 Gradio Mount 통합 코드 (main_mounted.py) : train_model.py를 먼저 실행하여 iris_model.pkl 파일이 생성되어 있다는 가정 하에 작동
