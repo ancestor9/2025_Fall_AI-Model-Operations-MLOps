@@ -7,6 +7,8 @@
 - [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
 #### [mini project 1] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
 #### [mini project 2] : google ai studio에서 API Key를 발급받아 colab에서 LLM 기반 챗봇 화면을 서비스하라 (외부 url로 publish하라)
+---> Get_started_LLM-gemini.ipynb
+
 
 
 ### 2. Gradio와 FastAPI 별도 서버
