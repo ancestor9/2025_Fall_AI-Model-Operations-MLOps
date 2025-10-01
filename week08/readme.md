@@ -1,10 +1,17 @@
-### 1. Gradio와 FastAPI 별도 서버
+### 1. cURL은 Client URL
+- URL 구문을 사용하여 데이터를 전송하기 위한 명령줄 도구 및 라이브러리
+- 용도: HTTP, HTTPS, FTP, SMTP 등 다양한 프로토콜을 지원하여 웹 서버와 통신하고, 데이터를 주고받는 데 사용
+- [curlconverter](https://curlconverter.com/) : FastAPI Swagg UI에서 Curl 명령어를 python으로 변경하여 확인
+- [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
+#### [mini project] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
+
+
+### 2. Gradio와 FastAPI 별도 서버
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 .pkl 파일로 저장
 - (백엔드) api.py: FastAPI 백엔드 (저장된 모델을 로드하여 API 제공)
 - (프론트엔드) app_gradio.py: Gradio 프론트엔드 (API 호출을 통해 사용자 인터페이스 제공)
 - (외부 배포) To create a public link, set `share=True` in `launch()
-- [curlconverter](https://curlconverter.com/) : FastAPI Swagg UI에서 Curl 명령어를 python으로 변경하여 확인
-- [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
+
 
 | 구분              | 파일명          | 역할                           | 실행 주소 (기본 포트)      | 핵심 엔드포인트 / 함수       | 설명                                                                 |
 |-------------------|----------------|--------------------------------|----------------------------|-------------------------------|----------------------------------------------------------------------|
@@ -13,7 +20,7 @@
 | 연결 URL          | app_gradio.py   | requests 모듈                  | http://127.0.0.1:8000/predict/ | requests.post(FASTAPI_URL, ...) | - Gradio 클라이언트가 FastAPI 서버에 데이터 전송<br>- API 호출을 통해 예측 요청 수행 |
 
 
-### 2. Gradio mount_gradio_app 기능으로 단일 서버
+### 3. Gradio mount_gradio_app 기능으로 단일 서버
 - FastAPI 앱 내부에 Gradio 인터페이스를 직접 통합(mount) : [Mount a gradio.Blocks to an existing FastAPI application](https://www.gradio.app/docs/gradio/mount_gradio_app)
 - 두 서버의 실행 대신 하나의 Uvicorn 프로세스로 FastAPI API와 Gradio UI를 동시에 서비스하여 코드가 훨씬 간결해지고 실행이 편리해짐
 - FastAPI 백엔드(api.py)와 Gradio 프론트엔드(app_gradio.py)의 기능을 **하나의 파일(main_mounted.py)**로 합친 간결한 코드
