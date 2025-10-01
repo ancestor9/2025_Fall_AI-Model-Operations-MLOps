@@ -11,8 +11,7 @@
 #### [mini project 3] : gemini(LLM) ai를 활용하여 file_path에서 데이터를 읽고 EDA (Exploratory Data Analysis) 탐색적 데이터 분석하라
 ---> file_path = "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/data/courses_data.csv"
 ---> 단 gradio로 외부 URL에 배포하라
-
-
+----> gemini_gradio.ipynb
 
 ### 2. Gradio와 FastAPI 별도 서버
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 .pkl 파일로 저장
