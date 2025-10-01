@@ -8,11 +8,10 @@
 ##### [mini project 1] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
 ##### [mini project 2] : google ai studio에서 API Key를 발급받아 colab에서 LLM 기반 챗봇 화면을 서비스하라 (외부 url로 publish하라)
 ---> Get_started_LLM-gemini.ipynb
-##### [mini project 3] : gemini(LLM) ai를 활용하여 file_path에서 데이터를 읽고 EDA (Exploratory Data Analysis) 탐색적 데이터 분석하라
+##### [mini project 3] : gemini(LLM) ai를 활용하여 file_path에서 데이터를 읽고 EDA (Exploratory Data Analysis)를 gradio로 외부 URL에 배포하라
 ---> file_path = "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/data/courses_data.csv"
----> 단 gradio로 외부 URL에 배포하라
 ----> gemini_gradio.ipynb
-### <font color='orange'> AI 코딩에 대한 여러분의 생각은? 개발자는 무엇을 해야 하는지?
+## <font color='orange'> AI 코딩에 대한 여러분의 생각은? 개발자는 무엇을 해야 하는지?</font>
 
 ### 2. Gradio와 FastAPI 별도 서버
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 .pkl 파일로 저장
