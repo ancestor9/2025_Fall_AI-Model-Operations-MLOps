@@ -12,7 +12,7 @@
 ---> file_path = "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/data/courses_data.csv"
 ---> 단 gradio로 외부 URL에 배포하라
 ----> gemini_gradio.ipynb
-### AI 코딩에 대한 여러분의 생각은? 개발자는 무엇을 해야 하는지?
+### <font color='orange'> AI 코딩에 대한 여러분의 생각은? 개발자는 무엇을 해야 하는지?
 
 ### 2. Gradio와 FastAPI 별도 서버
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 .pkl 파일로 저장
