@@ -5,13 +5,14 @@
 - 용도: HTTP, HTTPS, FTP, SMTP 등 다양한 프로토콜을 지원하여 웹 서버와 통신하고, 데이터를 주고받는 데 사용
 - [curlconverter](https://curlconverter.com/) : FastAPI Swagg UI에서 Curl 명령어를 python으로 변경하여 확인
 - [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
-#### [mini project 1] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
-#### [mini project 2] : google ai studio에서 API Key를 발급받아 colab에서 LLM 기반 챗봇 화면을 서비스하라 (외부 url로 publish하라)
+##### [mini project 1] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
+##### [mini project 2] : google ai studio에서 API Key를 발급받아 colab에서 LLM 기반 챗봇 화면을 서비스하라 (외부 url로 publish하라)
 ---> Get_started_LLM-gemini.ipynb
-#### [mini project 3] : gemini(LLM) ai를 활용하여 file_path에서 데이터를 읽고 EDA (Exploratory Data Analysis) 탐색적 데이터 분석하라
+##### [mini project 3] : gemini(LLM) ai를 활용하여 file_path에서 데이터를 읽고 EDA (Exploratory Data Analysis) 탐색적 데이터 분석하라
 ---> file_path = "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/data/courses_data.csv"
 ---> 단 gradio로 외부 URL에 배포하라
 ----> gemini_gradio.ipynb
+### AI 코딩에 대한 여러분의 생각은? 개발자는 무엇을 해야 하는지?
 
 ### 2. Gradio와 FastAPI 별도 서버
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 .pkl 파일로 저장
