@@ -4,7 +4,7 @@
 - (프론트엔드) app_gradio.py: Gradio 프론트엔드 (API 호출을 통해 사용자 인터페이스 제공)
 - (외부 배포) To create a public link, set `share=True` in `launch()
 - [curlconverter](https://curlconverter.com/) : FastAPI Swagg UI에서 Curl 명령어를 python으로 변경하여 확인
-- [curl 명령어 수행](https://reqbin.com/)
+- [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
 
 | 구분              | 파일명          | 역할                           | 실행 주소 (기본 포트)      | 핵심 엔드포인트 / 함수       | 설명                                                                 |
 |-------------------|----------------|--------------------------------|----------------------------|-------------------------------|----------------------------------------------------------------------|
