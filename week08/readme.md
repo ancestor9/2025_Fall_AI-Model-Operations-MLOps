@@ -31,32 +31,3 @@
 | Router (routers/) | creature.py, explorer.py | API 엔드포인트 정의 | APIRouter 사용, 경로 분리 및 태그 명시<br>모든 엔드포인트 함수는 get_db_connection을 Depends로 주입 |
 | CRUD 매핑 | RESTful API 설계 | 엔드포인트 매핑 | Create: POST /resources/ → 201 Created<br>Read (All): GET /resources/<br>Read (One): GET /resources/{id} → 없으면 404 Not Found<br>Update: PUT /resources/{id}<br>Delete: DELETE /resources/{id} → 204 No Content<br>예외 처리: HTTPException(status_code=404), IntegrityError(중복 이름 등) 처리 |
 
-
-
-
-#### 4. FastAPI 권장 구조
-project-root/
-│── main.py                     # FastAPI 실행 진입점
-│── requirements.txt            # 의존성 패키지 (pandas, fastapi, uvicorn 등)
-│
-├── models/                     # Pydantic 모델 정의
-│   ├── creature.py             # Creature 모델 (Base, Create, Get)
-│   └── explorer.py             # Explorer 모델 (Base, Create, Get)
-│
-├── data/                       # 데이터 계층
-│   ├── psv_loader.py           # PSV 파일 로더 (| 구분자, None 변환)
-│   └── database.py             # DB 연결 관리 및 초기화
-│
-├── services/                   # 서비스 계층 (비즈니스 로직)
-│   ├── creature_service.py     # Creature 관련 CRUD 서비스
-│   └── explorer_service.py     # Explorer 관련 CRUD 서비스
-│
-├── routers/                    # 라우터 계층 (API 엔드포인트)
-│   ├── creature.py             # Creature 라우터 (CRUD 엔드포인트)
-│   └── explorer.py             # Explorer 라우터 (CRUD 엔드포인트)
-│
-└── tests/                      # 테스트 코드
-    ├── test_creature.py
-    └── test_explorer.py
-
-
