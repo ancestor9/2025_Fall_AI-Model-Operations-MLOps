@@ -7,3 +7,14 @@
 - FastAPI 기본기 숙달: FastAPI의 APIRouter, Pydantic Model, Dependency Injection (DI) 등 핵심 기능을 이해하고 적용한다.
 - 데이터베이스 기초: ORM 없이 Python의 기본 라이브러리인 sqlite3를 사용하여 데이터베이스 CRUD 작업을 직접 수행한다.
 - 데이터 처리: Pandas를 사용하여 외부 파일(PSV)로부터 데이터를 효율적으로 읽어 초기 데이터베이스를 구성하는 방법을 습득한다.
+
+#### 프로젝트 구성 정보
+
+| **항목**         | **내용**                              |
+|-------------------|---------------------------------------|
+| **프레임워크**   | FastAPI (ASGI 프레임워크)            |
+| **서버**        | Uvicorn (ASGI 서버)                  |
+| **데이터베이스** | SQLite3 (Python 기본 내장)           |
+| **데이터 처리**  | Pandas (외부 데이터 파일 로딩)        |
+| **아키텍처**    | Model-Service-Router (MVC 패턴의 변형) |
+| **초기 데이터**  | creatures.psv, explorers.psv         |
