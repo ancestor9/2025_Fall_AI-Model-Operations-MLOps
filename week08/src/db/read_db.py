@@ -1,6 +1,6 @@
 
 '''
-url ="https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/data/creature.psv"
+url ="https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/week08/src/db/creature.psv"
 웹페이지 주소 (Blob URL) ❌ 
 
 원본 데이터 주소 (Raw URL) ✅
@@ -13,7 +13,7 @@ url ="https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main
 import pandas as pd
 
 # 1. 원본 파일 URL 지정
-url = "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/data/creature.psv"
+url = "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/week08/src/db/creature.psv"
 
 # 2. pd.read_csv를 사용하여 파일 읽기
 # PSV 파일이므로 구분자(sep)를 파이프(|)로 지정하는 것이 핵심입니다.
