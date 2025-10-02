@@ -39,7 +39,7 @@
        순수 SQL 사용: ORM (SQLAlchemy 등)을 일절 사용하지 않고 sqlite3.Connection 객체를 받아 직접 SQL 쿼리 (SELECT, INSERT, UPDATE, DELETE)를 작성
        타입 지정: 모든 함수는 입력 파라미터와 반환 값에 대한 명확한 타입 힌트(List[Creature], Optional[Explorer] 등)를 명시
 
-- Router 계층 (routers/)
+- Router 계층 (routers/) 
 -     FastAPI APIRouter: creature.py와 explorer.py에서 각각 APIRouter를 생성하여 경로를 분리하고 태그를 명시
       의존성 주입: 모든 엔드포인트 함수는 data/database.py의 get_db_connection을 **Depends**로 받아 데이터베이스 연결
 
