@@ -22,32 +22,32 @@
 
 #### 3. 작성 가이드 및 핵심 요구사항
 
-1. Model 계층 (models/)
-Pydantic 사용: creature.py와 explorer.py 파일에 각각의 데이터 구조를 정의
-세 가지 모델: 데이터의 목적에 따라 **Base (기본 구조), Create (입력), Get (출력/ID 포함)**의 세 가지 클래스로 분리 권고
-타입 힌트: 모든 필드에 정확한 Python 타입 힌트와 Optional을 명시
+- Model 계층 (models/)
+-          Pydantic 사용: creature.py와 explorer.py 파일에 각각의 데이터 구조를 정의
+                  세 가지 모델: 데이터의 목적에 따라 **Base (기본 구조), Create (입력), Get (출력/ID 포함)**의 세 가지 클래스로 분리 권고
+         타입 힌트: 모든 필드에 정확한 Python 타입 힌트와 Optional을 명시
 
-- 2. Data 계층 (data/)
+- Data 계층 (data/)
 -        psv_loader.py: pandas.read_csv를 사용하여 | 구분자로 PSV 파일을 읽고, DataFrame을 Python 딕셔너리 리스트(List[Dict])로 변환하여 반환
          (결측치)는 **None**으로 변환하여 SQLite NULL 값에 대응
 -      database.py: sqlite3 모듈을 사용하여 데이터베이스 연결을 관리
        get_db_connection() 함수는 FastAPI의 **의존성 주입(DI)**을 위해 Generator (yield)를 사용하며, 요청 처리 후 연결이 자동으로 닫히도록 (finally) 구현
        initialize_db() 함수는 psv_loader를 호출하여 데이터를 로드하고, CREATE TABLE IF NOT EXISTS 구문을 사용하여 테이블을 생성하며, 초기 데이터를 삽입
    
-- 3. Service 계층 (services/)
+- Service 계층 (services/)
 -      비즈니스 로직 분리: 데이터 처리 및 CRUD 로직은 Service 클래스 내부에 캡슐화
        순수 SQL 사용: ORM (SQLAlchemy 등)을 일절 사용하지 않고 sqlite3.Connection 객체를 받아 직접 SQL 쿼리 (SELECT, INSERT, UPDATE, DELETE)를 작성
        타입 지정: 모든 함수는 입력 파라미터와 반환 값에 대한 명확한 타입 힌트(List[Creature], Optional[Explorer] 등)를 명시
 
-4. Router 계층 (routers/)
+- Router 계층 (routers/)
 -     FastAPI APIRouter: creature.py와 explorer.py에서 각각 APIRouter를 생성하여 경로를 분리하고 태그를 명시
       의존성 주입: 모든 엔드포인트 함수는 data/database.py의 get_db_connection을 **Depends**로 받아 데이터베이스 연결
 
-5. CRUD 매핑: 각 엔드포인트는 다음 HTTP 메서드에 매핑 권고
-- Create: POST /resources/ (201 Created)
-- Read (All): GET /resources/
-- Read (One): GET /resources/{id} (404 Not Found 처리 필수)
-- Update: PUT /resources/{id}
-- Delete: DELETE /resources/{id} (204 No Content)
-- 예외 처리: 데이터가 없을 경우 (Read, Update, Delete) **HTTPException(status_code=404)**를 반환해야 하며 IntegrityError (중복 이름 등)에 대해서도 처리
+- CRUD 매핑: 각 엔드포인트는 다음 HTTP 메서드에 매핑 권고
+-         Create: POST /resources/ (201 Created)
+-          Read (All): GET /resources/
+-          Read (One): GET /resources/{id} (404 Not Found 처리 필수)
+-          Update: PUT /resources/{id}
+-          Delete: DELETE /resources/{id} (204 No Content)
+-          예외 처리: 데이터가 없을 경우 **HTTPException(status_code=404)**를 반환해야 하며 IntegrityError (중복 이름 등)에 대해서도 처리
 
