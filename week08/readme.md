@@ -22,7 +22,7 @@
 
 #### 3. 작성 가이드 및 핵심 요구사항
 
-- 1. Model 계층 (models/)
+1. Model 계층 (models/)
 Pydantic 사용: creature.py와 explorer.py 파일에 각각의 데이터 구조를 정의
 세 가지 모델: 데이터의 목적에 따라 **Base (기본 구조), Create (입력), Get (출력/ID 포함)**의 세 가지 클래스로 분리 권고
 타입 힌트: 모든 필드에 정확한 Python 타입 힌트와 Optional을 명시
