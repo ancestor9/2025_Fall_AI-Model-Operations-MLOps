@@ -15,7 +15,6 @@
 ### 개발 방안  
 #### 1. 모놀리식 아키텍쳐(Monolithic Architecture, MA)
 - main_orm.py
-  
 #### 2. 마이크로 서비스 아키텍처(Microservices Architecture, MSA)
 -       모듈화된 분산 구조(MVC)
         ├── main.py              # 🏠 앱 진입점 (FastAPI 인스턴스, 라우터 연결)
