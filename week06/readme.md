@@ -1,4 +1,5 @@
-### (Requirement) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
+### (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
+- Databae 생성하기(sqlite3), sqlalchemy 실행
 
 #### 1. 모놀리식 아키텍쳐(Monolithic Architecture, MA)
 - main_orm.py
