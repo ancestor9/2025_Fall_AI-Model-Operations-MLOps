@@ -1,10 +1,12 @@
 ## 교과목 내용
 ### 1. 네트워크 통신 (9시간)
 - HTTP, TCP/IP, Client-Server Architecture
+- socket (IP + port)
+- [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
   
 ### 2. FAST API (25시간)
 - Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
-- Github에 제출할 Homewworks
+- Github에 제출할 Homeworks
 -     - homework_01: 고객(성명, 연령, 주소, 전화번호)과 상품(상품명, 가격, 설명 등) 정보를 사전형으로 생성하고
         '/'에는 모든 정보를 조회하고, '/customers' 혹은 '/products'에서는 정보의 검색 가능
       - homework_02: 고객이 온라인 상품에 대해 가격 견적을 요청하면 세금 10%를 포함한 세후 가격을 제시
