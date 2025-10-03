@@ -17,8 +17,8 @@
 - main_orm.py
   
 #### 2. 마이크로 서비스 아키텍처(Microservices Architecture, MSA)
-- 모듈화된 분산 구조(MVC)
-- ├── main.py              # 🏠 앱 진입점 (FastAPI 인스턴스, 라우터 연결)
-- ├── database.py          # ⚙️ DB 연결 및 세션 관리 (Dependency)
-- ├── models.py            # 📦 Model: SQLAlchemy ORM 모델 및 Pydantic 스키마
-- └── crud.py              # 🛠️ Service/Repository: DB 로직 (CRUD 함수)
+-       모듈화된 분산 구조(MVC)
+        ├── main.py              # 🏠 앱 진입점 (FastAPI 인스턴스, 라우터 연결)
+        ├── database.py          # ⚙️ DB 연결 및 세션 관리 (Dependency)
+        ├── models.py            # 📦 Model: SQLAlchemy ORM 모델 및 Pydantic 스키마
+        └── crud.py              # 🛠️ Service/Repository: DB 로직 (CRUD 함수)
