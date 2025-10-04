@@ -1,7 +1,7 @@
 ### 요구사항 정의
 - (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
 - Databae 생성하기(sqlite3), sqlalchemy 실행
-- [DBeaver 다운로드하여 조회하가](https://dbeaver.io/)
+- [DBeaver 다운로드하여 조회하기](https://dbeaver.io/)
 
 ### 핵심 요소
 - Pydantic 모델 (ItemCreate, ItemResponse): 데이터 유효성 검사 및 데이터 직렬화/역직렬화를 담당
