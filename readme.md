@@ -1,8 +1,6 @@
 ## 교과목 내용
 ### 1. 네트워크 통신 (9시간)
-- HTTP, TCP/IP, Client-Server Architecture
-- socket (IP + port)
-- [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
+- HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port), - [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
   
 ### 2. FAST API (25시간)
 - Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
