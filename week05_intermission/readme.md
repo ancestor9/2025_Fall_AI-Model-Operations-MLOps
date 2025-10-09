@@ -1,6 +1,6 @@
 ## Intermission 1
 ### [10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
-### ["__name__" == "__main__"]
+### [모듈에 대하여 --name-- == --main--]
 ### 1. cURL은 Client URL
 - URL 구문을 사용하여 데이터를 전송하기 위한 명령줄 도구 및 라이브러리
 - 용도: HTTP, HTTPS, FTP, SMTP 등 다양한 프로토콜을 지원하여 웹 서버와 통신하고, 데이터를 주고받는 데 사용
