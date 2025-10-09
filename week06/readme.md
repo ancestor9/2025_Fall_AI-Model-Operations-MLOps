@@ -1,4 +1,4 @@
-### 사전학습
+### 사전학습(Python I/O 세 가지 방식)
 #### 1. Text files
 #### 2. Buffered binary files
 #### 3. Raw binary files
