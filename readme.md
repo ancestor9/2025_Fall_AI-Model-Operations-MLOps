@@ -1,8 +1,6 @@
 ## 교과목 내용
 ### 1. 네트워크 통신 (9시간)
-- HTTP, TCP/IP, Client-Server Architecture
-- socket (IP + port)
-- [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
+- HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port), - [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
   
 ### 2. FAST API (25시간)
 - Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
@@ -17,7 +15,7 @@
 - Mini project 2 (LLM을 이용한 서비스 만들기)
 
 ### 3. 과제 제출 (~11.3)
-- 교과목과 실습실 배정 및 시각화(학점 80%)
+- 교과목과 실습실 배정 및 시각화(학점 60%)
 - 배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
    
 #### 참고 자료

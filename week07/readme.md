@@ -1,3 +1,9 @@
+### 가장 최소한의 기능만 갖춘 FastAPI 백엔드와 HTML/JavaScript 프론트엔드를 사용하여 Gemini 챗봇을 구현하는 모듈화된 코드를 제시합니다.
+
+- main_gemini.py: FastAPI 백엔드 (Gemini API 호출 처리)
+-       index.html: HTML 프론트엔드 (사용자 인터페이스 및 API 호출)
+- gemini_client.py: Gemini API 로직 모듈화
+
 ### 💡 FastAPI와 MVC 패턴을 활용한 RESTful API 구현 과제
 - 본 과제는 고성능 웹 프레임워크인 FastAPI를 사용하여 MVC (Model-View-Controller) 패턴의 원칙을 적용하고,
 - ORM 없이 순수 SQL과 Pandas를 활용하여 기본적인 CRUD (Create, Read, Update, Delete) 기능을 구현하는 것을 목표
