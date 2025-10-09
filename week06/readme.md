@@ -1,6 +1,6 @@
 ### 사전학습
-- [python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
-- 
+- [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
+- [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
 
 ### 요구사항 정의
 - (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
