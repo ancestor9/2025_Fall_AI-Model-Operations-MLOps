@@ -1,4 +1,7 @@
 ### 사전학습
+#### 1. Text files
+#### 2. Buffered binary files
+#### 3. Raw binary files
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
 
