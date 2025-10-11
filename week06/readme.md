@@ -1,7 +1,7 @@
 ### 1. FastAPI Review
-#### [Using FastAPI to Build Python Web APIs](https://realpython.com/fastapi-python-web-apis/)
+#### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
-### 2. 사전학습(Python I/O 세 가지 방식)
+### 2. 사전학습(Python I/O 세 가지 방식) : file_operation.py
 #### 2.1. Text files
 #### 2.2. Buffered binary files
 #### 2.3. Raw binary files
