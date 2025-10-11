@@ -7,6 +7,8 @@
 #### 2.3. Raw binary files
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
+#### 2.4. CRUD (sqlite3)
+- shopping_list: List[str] = ["사과", "바나나", "우유"] 의CRUD를 sqlite3로 만들어 보
 
 ### 3. 과제 수행하기 
 #### 3.1. 요구사항 정의
