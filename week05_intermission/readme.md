@@ -10,8 +10,6 @@
            print(f"✅ '{item}'이 리스트에 추가되었습니다.")
        def get_all_items() -> List[str]:
            return shopping_list
-       def get_item_by_index(index: int) -> Optional[str]:
-           return shopping_list[index]
        def update_item(old_item: str, new_item: str) -> bool:
            index = shopping_list.index(old_item)
            shopping_list[index] = new_item
@@ -24,10 +22,15 @@
            add_item("빵"); add_item("치즈")
            print(f"현재 목록: {get_all_items()}")
            update_item("바나나", "파인애플")    
-           item_at_index_0 = get_item_by_index(0)
-           print(f"인덱스 0의 항목: {item_at_index_0}")
            remove_item("우유")
            print(f"최종 목록: {get_all_items()}")
+
+  -        class Fruit: 
+               def __init__(self, name: str) -> None:
+               self.name = name
+           banana: Fruit = Fruit("banana")
+           Fruit = Fruit("banana")
+           print(banana.name, Fruit.name)
 
 ### 2. if  _name_ == _main_ 구문과 module
 ### 3. mini project 1 : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 만들어라
