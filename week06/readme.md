@@ -8,7 +8,7 @@
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
 #### 2.4. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
-- shopping_list: List[str] = ["사과", "바나나", "우유"] 의CRUD를 sqlite3로 만들어 보기
+- shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(지난 주)를 sqlite3로 만들어 보기
 - CRUD를 with 구문 (context manager)으로 구성하기
 ### 3. 과제 수행하기 
 #### 3.1. 요구사항 정의
