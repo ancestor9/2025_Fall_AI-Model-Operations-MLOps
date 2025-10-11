@@ -3,6 +3,12 @@
 -      name: str = 'Bob'
        age: int = 'Eleven'
        print(f'{name}' age is {age) years old')
+-      class Fruit: 
+           def __init__(self, name: str) -> None:
+           self.name = name
+       banana: Fruit = Fruit("banana") # 타입 힌트(banana: Fruit)를 사용하여 이 변수가 Fruit 타입임을 명시
+       Fruit = Fruit("banana")
+       print(banana.name, Fruit.name)
 -      from typing import List, Optional
        shopping_list: List[str] = ["사과", "바나나", "우유"]
        def add_item(item: str) -> None:
@@ -24,13 +30,6 @@
            update_item("바나나", "파인애플")    
            remove_item("우유")
            print(f"최종 목록: {get_all_items()}")
-
--        class Fruit: 
-             def __init__(self, name: str) -> None:
-             self.name = name
-         banana: Fruit = Fruit("banana")
-         Fruit = Fruit("banana")
-         print(banana.name, Fruit.name)
 
 ### 2. if  _name_ == _main_ 구문과 module
 ### 3. mini project 1 : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 만들어라
