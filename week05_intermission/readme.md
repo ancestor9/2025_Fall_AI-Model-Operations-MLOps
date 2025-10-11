@@ -1,13 +1,13 @@
 ## Intermission 1
 ### 1. [Type : 10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
 ### 2. [모듈에 대하여 --name-- == --main--]
-### 3. cURL은 Client URL
+### 3. [mini project 1] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
+### 4. cURL은 Client URL
 - URL 구문을 사용하여 데이터를 전송하기 위한 명령줄 도구 및 라이브러리
 - 용도: HTTP, HTTPS, FTP, SMTP 등 다양한 프로토콜을 지원하여 웹 서버와 통신하고, 데이터를 주고받는 데 사용
 - [curlconverter](https://curlconverter.com/) : FastAPI Swagg UI에서 Curl 명령어를 python으로 변경하여 확인
 - [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
-##### [mini project 1] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
-##### [mini project 2] : google ai studio에서 API Key를 발급받아 colab에서 LLM 기반 챗봇 화면을 서비스하라 (외부 url로 publish하라)
+### 5. [mini project 2] : google ai studio에서 API Key를 발급받아 colab에서 LLM 기반 챗봇 화면을 서비스하라 (외부 url로 publish하라)
 ---> Get_started_LLM-gemini.ipynb
 ##### [mini project 3] : gemini(LLM) ai를 활용하여 file_path에서 데이터를 읽고 EDA (Exploratory Data Analysis)를 gradio로 외부 URL에 배포하라
 ---> file_path = "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/data/courses_data.csv"
