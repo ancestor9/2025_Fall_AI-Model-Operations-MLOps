@@ -1,4 +1,4 @@
-## Intermission 1
+## Intermission 1 (추석연휴 이후~~)
 ### 1. [Type : 10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
 ### 2. [모듈에 대하여 --name-- == --main--]
 ### 3. mini project 1 : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
