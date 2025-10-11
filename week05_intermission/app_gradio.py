@@ -1,33 +1,36 @@
 import gradio as gr
-import requests 
-import json
+import requests
 
-# FastAPI 서버 주소 (FastAPI가 8000번 포트에서 실행된다고 가정)
+# FastAPI 서버 주소
 FASTAPI_URL = "http://127.0.0.1:8000/predict/"
 
 def predict_species(sl, sw, pl, pw):
     """FastAPI를 호출하여 예측 결과를 가져옵니다."""
     
-    payload = {"sl": sl, "sw": sw, "pl": pl, "pw": pw}
+    # API 스펙에 맞게 키 이름 수정
+    payload = {
+        "sepal_length": sl,
+        "sepal_width": sw,
+        "petal_length": pl,
+        "petal_width": pw
+    }
     
     try:
         response = requests.post(FASTAPI_URL, json=payload)
         response.raise_for_status()
-
+        
         result = response.json()
         
-        # 💡 이 부분이 수정되었습니다: 'species'와 'confidence' 키를 사용합니다.
         species = result["species"].capitalize()
         confidence = result["confidence"] * 100
         
         return f"✅ 예측 품종: {species}\n(확신도: {confidence:.2f}%)"
         
     except requests.exceptions.ConnectionError:
-        return "❌ 오류: FastAPI 서버(8000번 포트)에 연결할 수 없습니다."
+        return "❌ 오류: FastAPI 서버(8000번 포트)에 연결할 수 없습니다.\n터미널에서 'uvicorn api:app --reload'로 서버를 먼저 실행하세요."
+    except requests.exceptions.HTTPError as e:
+        return f"❌ HTTP 오류 ({e.response.status_code}): {e.response.text}"
     except Exception as e:
-        # 이전에 발생했던 422 오류를 잡기 위해 추가 점검
-        if "422 Client Error" in str(e):
-             return "❌ 입력 오류 (422): FastAPI 서버로 전달된 데이터 형식에 문제가 있습니다. 변수 이름(sl, sw, pl, pw)을 확인하세요."
         return f"❌ 예측 오류: {e}"
 
 
@@ -40,8 +43,8 @@ iface = gr.Interface(
         gr.Slider(minimum=1.0, maximum=7.0, step=0.1, value=1.4, label="꽃잎 길이 (Petal Length, cm)"),
         gr.Slider(minimum=0.1, maximum=2.5, step=0.1, value=0.2, label="꽃잎 너비 (Petal Width, cm)"),
     ],
-    outputs=gr.Textbox(label="예측 결과", lines=10),
-    title="FastAPI (PKL Load) + Gradio: 붓꽃(Iris) 품종 예측 서비스",
+    outputs=gr.Textbox(label="예측 결과", lines=3),
+    title="🌸 붓꽃(Iris) 품종 예측 서비스",
     description="슬라이더를 조절하여 붓꽃의 크기를 입력하고 품종을 예측합니다."
 )
 

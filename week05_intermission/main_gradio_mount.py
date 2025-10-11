@@ -1,29 +1,30 @@
-# main_mounted.py
+# main_gradio_mounted.py
 
 import pickle
 import numpy as np
-import requests
-import json
 from fastapi import FastAPI
 from pydantic import BaseModel
 from sklearn.datasets import load_iris
 import gradio as gr
-from gradio.routes import mount_gradio_app # 💡 Gradio Mount 함수 임포트
+import uvicorn  # Added for running the FastAPI server
 
-# --- 1. 모델 로드 및 설정 ---
+# --- 1. 모델 로드 ---
 MODEL_FILENAME = "iris_model.pkl"
 try:
     with open(MODEL_FILENAME, "rb") as f:
         model = pickle.load(f)
-    print(f"✅ 모델 '{MODEL_FILENAME}' 로드 완료.")
+    print(f"✅ 모델 로드 완료")
 except FileNotFoundError:
-    print(f"❌ 치명적 오류: '{MODEL_FILENAME}' 파일을 찾을 수 없습니다. train_model.py를 먼저 실행하세요.")
+    print(f"❌ '{MODEL_FILENAME}' 파일을 찾을 수 없습니다. 모델 파일이 올바른 경로에 있는지 확인하세요.")
+    model = None
+except Exception as e:
+    print(f"❌ 모델 로드 중 오류 발생: {str(e)}")
     model = None
 
-iris_names = load_iris().target_names # 품종 이름
+iris_names = load_iris().target_names
 
-# --- 2. FastAPI 설정 ---
-app = FastAPI(title="FastAPI + Gradio Mounted Service")
+# --- 2. FastAPI 앱 ---
+app = FastAPI()
 
 class IrisFeatures(BaseModel):
     sl: float
@@ -31,70 +32,79 @@ class IrisFeatures(BaseModel):
     pl: float
     pw: float
 
-# --- 3. FastAPI API 엔드포인트 ---
-# Gradio가 호출할 백엔드 API (FastAPI의 핵심 기능)
-@app.post("/api/predict")
-def predict_iris_api(features: IrisFeatures):
+# --- 3. 예측 함수 ---
+def get_prediction(sl: float, sw: float, pl: float, pw: float):
     if model is None:
         return {"error": "모델 로드 실패"}
     
-    data_in = [[features.sl, features.sw, features.pl, features.pw]]
-    
+    data_in = [[sl, sw, pl, pw]]
     prediction = model.predict(data_in)[0]
     proba = model.predict_proba(data_in)[0]
     
     return {
         "species": iris_names[prediction],
-        "confidence": np.max(proba)
+        "confidence": float(np.max(proba))
     }
 
-# --- 4. Gradio 프론트엔드 함수 ---
-# Gradio 인터페이스에서 실행될 함수. FastAPI 엔드포인트를 호출하도록 구현합니다.
-API_URL = "http://127.0.0.1:8000/api/predict" # 💡 FastAPI가 실행될 주소/포트와 일치해야 합니다.
+# --- 4. API 엔드포인트 ---
+@app.post("/api/predict")
+def predict_api(features: IrisFeatures):
+    return get_prediction(features.sl, features.sw, features.pl, features.pw)
 
-def predict_species_ui(sl, sw, pl, pw):
-    payload = {"sl": sl, "sw": sw, "pl": pl, "pw": pw}
+# --- 5. Gradio 함수 ---
+def predict_ui(sl, sw, pl, pw):
+    result = get_prediction(sl, sw, pl, pw)
     
-    try:
-        # 자기 자신(FastAPI)의 API를 호출
-        response = requests.post(API_URL, json=payload)
-        response.raise_for_status()
+    if "error" in result:
+        return f"❌ {result['error']}"
+    
+    species = result["species"].capitalize()
+    confidence = result["confidence"] * 100
+    
+    return f"✅ 예측 품종: {species}\n(확신도: {confidence:.2f}%)"
 
-        result = response.json()
+# --- 6. Gradio 인터페이스 ---
+with gr.Blocks(title="붓꽃 예측") as demo:
+    gr.Markdown("# 🌸 붓꽃 품종 예측 서비스")
+    gr.Markdown("슬라이더를 조절하여 붓꽃의 크기를 입력하세요")
+    
+    with gr.Row():
+        with gr.Column():
+            sl = gr.Slider(4.0, 8.0, step=0.1, value=5.1, label="꽃받침 길이 (cm)")
+            sw = gr.Slider(2.0, 4.5, step=0.1, value=3.5, label="꽃받침 너비 (cm)")
+            pl = gr.Slider(1.0, 7.0, step=0.1, value=1.4, label="꽃잎 길이 (cm)")
+            pw = gr.Slider(0.1, 2.5, step=0.1, value=0.2, label="꽃잎 너비 (cm)")
+            btn = gr.Button("예측하기", variant="primary")
         
-        species = result["species"].capitalize()
-        confidence = result["confidence"] * 100
-        
-        return f"✅ 예측 품종: {species}\n(확신도: {confidence:.2f}%)"
-        
-    except Exception as e:
-        return f"❌ 예측 오류: {e}"
+        with gr.Column():
+            output = gr.Textbox(label="예측 결과", lines=3)
+    
+    gr.Examples(
+        examples=[
+            [5.1, 3.5, 1.4, 0.2],
+            [6.7, 3.0, 5.2, 2.3],
+            [5.9, 3.0, 4.2, 1.5],
+        ],
+        inputs=[sl, sw, pl, pw],
+    )
+    
+    btn.click(fn=predict_ui, inputs=[sl, sw, pl, pw], outputs=output)
 
-# --- 5. Gradio 인터페이스 정의 ---
-iface = gr.Interface(
-    fn=predict_species_ui,
-    inputs=[
-        gr.Slider(4.0, 8.0, 0.1, value=5.1, label="꽃받침 길이 (SL)"),
-        gr.Slider(2.0, 4.5, 0.1, value=3.5, label="꽃받침 너비 (SW)"),
-        gr.Slider(1.0, 7.0, 0.1, value=1.4, label="꽃잎 길이 (PL)"),
-        gr.Slider(0.1, 2.5, 0.1, value=0.2, label="꽃잎 너비 (PW)"),
-    ],
-    outputs=gr.Textbox(label="예측 결과", lines=3),
-    title="Iris 예측 서비스 (FastAPI + Gradio Mount)",
-)
+# --- 7. Gradio 마운트 ---
+app = gr.mount_gradio_app(app, demo, path="/gradio")
 
-#### 실행 방법 안내 ####
-'''
-Gradio UI 접속: http://127.0.0.1:8000/gradio
-
-FastAPI API (직접 호출): http://127.0.0.1:8000/api/predict (POST 요청)
-
-'''
-
-# --- 6. Gradio 앱을 FastAPI에 마운트 ---
-# Gradio 인터페이스를 '/gradio' 경로에 통합합니다.
-# 이제 FastAPI 앱이 Gradio 앱을 포함하게 됩니다.
-app = mount_gradio_app(app, iface, path="/gradio")
+# --- 8. 서버 실행 ---
+if __name__ == "__main__":
+    print("\n" + "="*60)
+    print("🚀 서버 시작!")
+    print("="*60)
+    print("📍 Gradio UI:      http://127.0.0.1:8000/gradio")
+    print("📍 API Docs:       http://127.0.0.1:8000/docs")
+    print("📍 API Endpoint:   http://127.0.0.1:8000/api/predict")
+    print("="*60 + "\n")
+    
+    # Run the FastAPI server with uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
 
 # 💡 참고: '/' 경로를 Gradio로 리디렉션하여 바로 UI를 볼 수도 있습니다.
 # from fastapi.responses import RedirectResponse
