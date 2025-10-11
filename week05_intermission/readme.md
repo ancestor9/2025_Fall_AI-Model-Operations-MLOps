@@ -15,7 +15,7 @@
 - 파일위치 : "https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/data/courses_data.csv"
 - gemini_gradio.ipynb
 ### 7. mini project 4 : Gradio와 FastAPI 별도 서버
-- (모델학습 및 저장) train_model.py: 모델을 학습시키고 .pkl 파일로 저장
+- (모델학습 및 저장) train_model.py: 모델을 학습시키고 에측모형을 *.pkl 파일로 저장
 - (백엔드) api.py: FastAPI 백엔드 (저장된 모델을 로드하여 API 제공)
 - (프론트엔드) app_gradio.py: Gradio 프론트엔드 (API 호출을 통해 사용자 인터페이스 제공)
 - (외부 배포) To create a public link, set `share=True` in `launch()
