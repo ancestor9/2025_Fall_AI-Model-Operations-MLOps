@@ -11,13 +11,17 @@
 - shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(지난 주)를 sqlite3로 만들어 보기
 - CRUD를 with 구문 (context manager)으로 구성하기
 - faker로 가상데이터를 만들어 CRUD 실습하기
+  
 ### 3. 과제 수행하기 
-#### 3.1. 요구사항 정의
-- (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
-- Databae 생성하기([sqlite3](https://docs.python.org/3/contents.html)), sqlalchemy 실행
+#### 3.1. 데이터베이스 이해 및 실습
+- Python_Database.ipynb : superbase, sqlite3, downkoad file 실습
 - [DBeaver 다운로드하여 조회하기](https://dbeaver.io/)
 
-#### 3.2. 핵심 요소
+#### 3.2. 요구사항 정의
+- (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
+- Databae 생성하기([sqlite3](https://docs.python.org/3/contents.html)), sqlalchemy 실행
+
+#### 3.3. 핵심 요소
 - Pydantic 모델 (ItemCreate, ItemResponse): 데이터 유효성 검사 및 데이터 직렬화/역직렬화를 담당
 - SQLAlchemy 모델 (Item): 데이터베이스의 테이블 구조를 정의
 - 의존성 주입(Dependancy Injection) : Depends(get_db)를 사용하여 각 API 엔드포인트 함수가 호출될 때마다 독립적인 DB 세션을 자동으로 생성하고, 요청 처리가 끝난 후에는 자동으로 닫아 리소스를 정리
@@ -26,10 +30,10 @@
       Read (GET): db.query(Item).all()이나 db.query(Item).filter(...)를 사용해 데이터를 조회
       Update (PUT): 기존 객체를 조회하여 필드를 변경한 후 db.commit()으로 변경 사항을 저장
 
-#### 3.3. 개발 방안  
-##### 3.3.1. 모놀리식 아키텍쳐(Monolithic Architecture, MA)
+#### 3.4. 개발 방안  
+##### 3.4.1. 모놀리식 아키텍쳐(Monolithic Architecture, MA)
 - main_orm.py
-##### 3.3.2. 마이크로 서비스 아키텍처(Microservices Architecture, MSA)
+##### 3.4.2. 마이크로 서비스 아키텍처(Microservices Architecture, MSA)
 -       모듈화된 분산 구조(MVC)
         ├── main.py              # 🏠 앱 진입점 (FastAPI 인스턴스, 라우터 연결)
         ├── database.py          # ⚙️ DB 연결 및 세션 관리 (Dependency)
