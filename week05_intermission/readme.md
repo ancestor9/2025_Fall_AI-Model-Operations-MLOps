@@ -9,6 +9,7 @@
        banana: Fruit = Fruit("banana") # 타입 힌트(banana: Fruit)를 사용하여 이 변수가 Fruit 타입임을 명시
        Fruit = Fruit("banana")
        print(banana.name, Fruit.name)
+       # https://www.youtube.com/watch?v=1I3fuDR2S9A&t=193s (Dunder Methods)
 -      from typing import List, Optional
        shopping_list: List[str] = ["사과", "바나나", "우유"]
        def add_item(item: str) -> None:
