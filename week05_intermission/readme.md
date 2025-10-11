@@ -4,7 +4,7 @@
        age: int = 'Eleven'
        print(f'{name}' age is {age) years old')
 
-### 2. [module, if  _name-- == --main-- :]
+### 2. if  _name_ == _main_ 구문과 module
 ### 3. mini project 1 : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
 - gradio_from_swagger.py
 - [Mount a gradio.Blocks to an existing FastAPI application](https://www.gradio.app/docs/gradio/mount_gradio_app)
