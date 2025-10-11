@@ -1,5 +1,5 @@
 ## Intermission 1
-### [10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
+### [Type : 10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
 ### [모듈에 대하여 --name-- == --main--]
 ### 1. cURL은 Client URL
 - URL 구문을 사용하여 데이터를 전송하기 위한 명령줄 도구 및 라이브러리
