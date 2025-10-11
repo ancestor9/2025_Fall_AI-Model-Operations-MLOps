@@ -2,11 +2,13 @@
 ### 1. [Type : 10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
 ### 2. [모듈에 대하여 --name-- == --main--]
 ### 3. [mini project 1] : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 생성하라
+-       gradio_from_swagger.py
+-       [Mount a gradio.Blocks to an existing FastAPI application](https://www.gradio.app/docs/gradio/mount_gradio_app)
 ### 4. cURL은 Client URL
-- URL 구문을 사용하여 데이터를 전송하기 위한 명령줄 도구 및 라이브러리
-- 용도: HTTP, HTTPS, FTP, SMTP 등 다양한 프로토콜을 지원하여 웹 서버와 통신하고, 데이터를 주고받는 데 사용
-- [curlconverter](https://curlconverter.com/) : FastAPI Swagg UI에서 Curl 명령어를 python으로 변경하여 확인
-- [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
+-       URL 구문을 사용하여 데이터를 전송하기 위한 명령줄 도구 및 라이브러리
+-       용도: HTTP, HTTPS, FTP, SMTP 등 다양한 프로토콜을 지원하여 웹 서버와 통신하고, 데이터를 주고받는 데 사용
+-       [curlconverter](https://curlconverter.com/) : FastAPI Swagg UI에서 Curl 명령어를 python으로 변경하여 확인
+-       [curl 명령어 수행](https://reqbin.com/) : : FastAPI Swagg UI에서 Curl 명령어를 크롬확장판을 이용하여 실행하여 보기
 ### 5. [mini project 2] : google ai studio에서 API Key를 발급받아 colab에서 LLM 기반 챗봇 화면을 서비스하라 (외부 url로 publish하라)
 ---> Get_started_LLM-gemini.ipynb
 ##### [mini project 3] : gemini(LLM) ai를 활용하여 file_path에서 데이터를 읽고 EDA (Exploratory Data Analysis)를 gradio로 외부 URL에 배포하라
@@ -30,7 +32,7 @@
 
 
 ### 3. Gradio mount_gradio_app 기능으로 단일 서버
-- FastAPI 앱 내부에 Gradio 인터페이스를 직접 통합(mount) : [Mount a gradio.Blocks to an existing FastAPI application](https://www.gradio.app/docs/gradio/mount_gradio_app)
+- FastAPI 앱 내부에 Gradio 인터페이스를 직접 통합(mount)
 - 두 서버의 실행 대신 하나의 Uvicorn 프로세스로 FastAPI API와 Gradio UI를 동시에 서비스하여 코드가 훨씬 간결해지고 실행이 편리해짐
 - FastAPI 백엔드(api.py)와 Gradio 프론트엔드(app_gradio.py)의 기능을 **하나의 파일(main_mounted.py)**로 합친 간결한 코드
 - 🚀 Gradio Mount 통합 코드 (main_mounted.py) : train_model.py를 먼저 실행하여 iris_model.pkl 파일이 생성되어 있다는 가정 하에 작동
