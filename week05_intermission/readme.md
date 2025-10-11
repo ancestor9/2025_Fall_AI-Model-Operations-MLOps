@@ -25,12 +25,12 @@
            remove_item("우유")
            print(f"최종 목록: {get_all_items()}")
 
-  -        class Fruit: 
-               def __init__(self, name: str) -> None:
-               self.name = name
-           banana: Fruit = Fruit("banana")
-           Fruit = Fruit("banana")
-           print(banana.name, Fruit.name)
+-        class Fruit: 
+             def __init__(self, name: str) -> None:
+             self.name = name
+         banana: Fruit = Fruit("banana")
+         Fruit = Fruit("banana")
+         print(banana.name, Fruit.name)
 
 ### 2. if  _name_ == _main_ 구문과 module
 ### 3. mini project 1 : path, query에 FastAPI를 만들고 Swagger UI 대신 Gradio UI를 만들어라
