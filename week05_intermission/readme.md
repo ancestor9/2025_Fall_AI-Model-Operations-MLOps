@@ -1,7 +1,7 @@
 ## Intermission 1 (추석연휴 이후~~)
 ### 1. [Type : 10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
 -      name: str = 'Bob'
-       age: int = 'Eleven'
+       age: int = 15 # 'Eleven'
        print(f'{name} age is {age) years old')
 -      class Fruit: 
            def __init__(self, name: str) -> None:
