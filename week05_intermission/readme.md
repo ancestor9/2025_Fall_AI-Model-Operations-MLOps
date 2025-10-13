@@ -2,7 +2,7 @@
 ### 1. [Type : 10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
 -      name: str = 'Bob'
        age: int = 'Eleven'
-       print(f'{name}' age is {age) years old')
+       print(f'{name} age is {age) years old')
 -      class Fruit: 
            def __init__(self, name: str) -> None:
            self.name = name
