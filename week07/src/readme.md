@@ -34,3 +34,17 @@
 |  15 | `main.py`     | `@app.put("/users/{user_id}/email", ...)<br>def update_existing_user_email(...):` | ✏️ 이메일 수정        |
 |  16 | `crud.py`     | `def update_user_email(db: Session, ...):<br>    db_user = db.query(...)`         | 🔧 유저 정보 고치기     |
 
+5. SessionLocal 클라스 / Session() 객체
+| 구분     | SessionLocal (sessionmaker) | Session()              |
+| ------ | --------------------------- | ---------------------- |
+| 역할     | 세션 생성용 팩토리 (템플릿)            | 직접 세션 인스턴스 생성          |
+| 호출 형태  | `SessionLocal()`            | `Session(bind=engine)` |
+| 주 사용처  | 애플리케이션 전역 설정 (FastAPI 등)    | 임시 세션 또는 실험용 코드        |
+| 설정 일관성 | 유지됨 (한 번 정의 후 반복 사용)        | 수동으로 매번 지정 필요          |
+| 관리 방식  | 중앙 집중 관리 가능                 | 개별 세션 독립 관리            |
+
+| 내용                    | 답변                                                                     |
+| --------------------- | ---------------------------------------------------------------------- |
+| `SessionLocal`은 무엇인가? | `Session`을 생성하는 팩토리 (sessionmaker로 만든 클래스)                             |
+| `Session()`과의 차이는?    | `Session()`은 즉시 세션 객체를 생성하지만, `SessionLocal`은 설정된 템플릿을 통해 세션을 일관되게 생성함 |
+
