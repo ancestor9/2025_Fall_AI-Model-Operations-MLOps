@@ -35,6 +35,7 @@
 |  16 | `crud.py`     | `def update_user_email(db: Session, ...):<br>    db_user = db.query(...)`         | 🔧 유저 정보 고치기     |
 
 5. SessionLocal 클라스 / Session() 객체
+
 | 구분     | SessionLocal (sessionmaker) | Session()              |
 | ------ | --------------------------- | ---------------------- |
 | 역할     | 세션 생성용 팩토리 (템플릿)            | 직접 세션 인스턴스 생성          |
