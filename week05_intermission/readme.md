@@ -1,8 +1,15 @@
 ## Intermission 1 (추석연휴 이후~~)
 ### 1. [Type : 10 Important Python Concepts In 20 Minutes](https://www.youtube.com/watch?v=Gx5qb1uHss4)
 -      name: str = 'Bob'
-       age: int = 'Eleven'
-       print(f'{name}' age is {age) years old')
+       age: int = 15 # 'Eleven'
+       print(f'{name} age is {age) years old')
+-      class Fruit: 
+           def __init__(self, name: str) -> None:
+           self.name = name
+       banana: Fruit = Fruit("banana") # 타입 힌트(banana: Fruit)를 사용하여 이 변수가 Fruit 타입임을 명시
+       Fruit = Fruit("banana")
+       print(banana.name, Fruit.name)
+       # https://www.youtube.com/watch?v=1I3fuDR2S9A&t=193s (Dunder Methods)
 -      from typing import List, Optional
        shopping_list: List[str] = ["사과", "바나나", "우유"]
        def add_item(item: str) -> None:
@@ -10,8 +17,6 @@
            print(f"✅ '{item}'이 리스트에 추가되었습니다.")
        def get_all_items() -> List[str]:
            return shopping_list
-       def get_item_by_index(index: int) -> Optional[str]:
-           return shopping_list[index]
        def update_item(old_item: str, new_item: str) -> bool:
            index = shopping_list.index(old_item)
            shopping_list[index] = new_item
@@ -24,8 +29,6 @@
            add_item("빵"); add_item("치즈")
            print(f"현재 목록: {get_all_items()}")
            update_item("바나나", "파인애플")    
-           item_at_index_0 = get_item_by_index(0)
-           print(f"인덱스 0의 항목: {item_at_index_0}")
            remove_item("우유")
            print(f"최종 목록: {get_all_items()}")
 
