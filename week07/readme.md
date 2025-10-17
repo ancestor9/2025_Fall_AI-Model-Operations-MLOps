@@ -1,39 +1,37 @@
-### 가장 최소한의 기능만 갖춘 FastAPI 백엔드와 HTML/JavaScript 프론트엔드를 사용하여 Gemini 챗봇을 구현하는 모듈화된 코드를 제시합니다.
+### 1. FastAPI Review
+#### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
-- main_gemini.py: FastAPI 백엔드 (Gemini API 호출 처리)
--       index.html: HTML 프론트엔드 (사용자 인터페이스 및 API 호출)
-- gemini_client.py: Gemini API 로직 모듈화
+### 2. 사전학습(Python I/O 세 가지 방식) : file_operation.py
+#### 2.1. Text files
+#### 2.2. Buffered binary files
+#### 2.3. Raw binary files
+- [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
+- [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
+#### 2.4. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
+- shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(지난 주)를 sqlite3로 만들어 보기
+- CRUD를 with 구문 (context manager)으로 구성하기
+- faker로 가상데이터를 만들어 CRUD 실습하기
+### 3. 과제 수행하기 
+#### 3.1. 요구사항 정의
+- (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
+- Databae 생성하기([sqlite3](https://docs.python.org/3/contents.html)), sqlalchemy 실행
+- [DBeaver 다운로드하여 조회하기](https://dbeaver.io/)
 
-### 💡 FastAPI와 MVC 패턴을 활용한 RESTful API 구현 과제
-- 본 과제는 고성능 웹 프레임워크인 FastAPI를 사용하여 MVC (Model-View-Controller) 패턴의 원칙을 적용하고,
-- ORM 없이 순수 SQL과 Pandas를 활용하여 기본적인 CRUD (Create, Read, Update, Delete) 기능을 구현하는 것을 목표
+#### 3.2. 핵심 요소
+- Pydantic 모델 (ItemCreate, ItemResponse): 데이터 유효성 검사 및 데이터 직렬화/역직렬화를 담당
+- SQLAlchemy 모델 (Item): 데이터베이스의 테이블 구조를 정의
+- 의존성 주입(Dependancy Injection) : Depends(get_db)를 사용하여 각 API 엔드포인트 함수가 호출될 때마다 독립적인 DB 세션을 자동으로 생성하고, 요청 처리가 끝난 후에는 자동으로 닫아 리소스를 정리
+- CRUD 로직:
+-     Create (POST): Pydantic 모델로 받은 데이터를 SQLAlchemy 모델 객체로 만들어 db.add(), db.commit()으로 저장
+      Read (GET): db.query(Item).all()이나 db.query(Item).filter(...)를 사용해 데이터를 조회
+      Update (PUT): 기존 객체를 조회하여 필드를 변경한 후 db.commit()으로 변경 사항을 저장
 
-#### 1. 과제 목표
-- 모듈화 학습: 애플리케이션의 각 계층(Model, Service, Router)을 별도의 Python 모듈로 분리하여 코드의 재사용성과 유지보수성을 높인다.
-- FastAPI 기본기 숙달: FastAPI의 APIRouter, Pydantic Model, Dependency Injection (DI) 등 핵심 기능을 이해하고 적용한다.
-- 데이터베이스 기초: ORM 없이 Python의 기본 라이브러리인 sqlite3를 사용하여 데이터베이스 CRUD 작업을 직접 수행한다.
-- 데이터 처리: Pandas를 사용하여 외부 파일(PSV)로부터 데이터를 효율적으로 읽어 초기 데이터베이스를 구성하는 방법을 습득한다.
-
-#### 2. 프로젝트 구성 정보
-
-| **항목**         | **내용**                              |
-|-------------------|---------------------------------------|
-| **프레임워크**   | FastAPI (ASGI 프레임워크)            |
-| **서버**        | Uvicorn (ASGI 서버)                  |
-| **데이터베이스** | SQLite3 (Python 기본 내장)           |
-| **데이터 처리**  | Pandas (외부 데이터 파일 로딩)        |
-| **아키텍처**    | Model-Service-Router (MVC 패턴의 변형) |
-| **초기 데이터**  | creatures.psv, explorers.psv         |
-
-
-#### 3. 작성 가이드 및 핵심 요구사항
-
-| 계층 | 파일 / 구성 요소 | 주요 역할 | 세부 권고사항 |
-|------|----------------|----------|--------------|
-| Model (models/) | creature.py, explorer.py | 데이터 구조 정의 | Pydantic 사용<br>세 가지 모델 클래스 구분: Base (기본 구조), Create (입력), Get (출력/ID 포함)<br>모든 필드에 Python 타입 힌트 및 Optional 명시 |
-| Data (data/) | psv_loader.py | PSV 파일 로딩 | pandas.read_csv로 '|' 구분자 PSV 파일 읽기<br>DataFrame → List[Dict] 변환<br>결측치는 None으로 변환해 SQLite NULL 대응 |
-|  | database.py | DB 연결 및 초기화 | sqlite3 모듈 사용<br>get_db_connection(): Generator(yield)로 구현 → FastAPI DI 지원, 요청 후 자동 close(finally)<br>initialize_db(): psv_loader 호출 → 데이터 로드, CREATE TABLE IF NOT EXISTS, 초기 데이터 삽입 |
-| Service (services/) | Service 클래스들 | 비즈니스 로직 및 CRUD 처리 | SQLAlchemy 등 ORM 사용 금지<br>sqlite3.Connection 직접 사용<br>SQL 쿼리 직접 작성 (SELECT, INSERT, UPDATE, DELETE)<br>모든 함수에 타입 힌트 명시 (예: List[Creature], Optional[Explorer]) |
-| Router (routers/) | creature.py, explorer.py | API 엔드포인트 정의 | APIRouter 사용, 경로 분리 및 태그 명시<br>모든 엔드포인트 함수는 get_db_connection을 Depends로 주입 |
-| CRUD 매핑 | RESTful API 설계 | 엔드포인트 매핑 | Create: POST /resources/ → 201 Created<br>Read (All): GET /resources/<br>Read (One): GET /resources/{id} → 없으면 404 Not Found<br>Update: PUT /resources/{id}<br>Delete: DELETE /resources/{id} → 204 No Content<br>예외 처리: HTTPException(status_code=404), IntegrityError(중복 이름 등) 처리 |
-
+#### 3.3. 개발 방안  
+##### 3.3.1. 모놀리식 아키텍쳐(Monolithic Architecture, MA)
+- main_orm.py
+##### 3.3.2. 마이크로 서비스 아키텍처(Microservices Architecture, MSA)
+-       모듈화된 분산 구조(MVC)
+        ├── main.py              # 🏠 앱 진입점 (FastAPI 인스턴스, 라우터 연결)
+        ├── database.py          # ⚙️ DB 연결 및 세션 관리 (Dependency)
+        ├── models.py            # 📦 Model: SQLAlchemy ORM 모델 및 Pydantic 스키마
+        └── crud.py              # 🛠️ Service/Repository: DB 로직 (CRUD 함수)
