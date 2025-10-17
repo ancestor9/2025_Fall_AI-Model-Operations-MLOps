@@ -19,14 +19,16 @@ import crud # CRUD 로직
 
 app = FastAPI()
 
-# --- 앱 시작 이벤트: 테이블 생성 ---
+# --- 앱 시작 이벤트: 📍 실제 테이블 생성! ---
 @app.on_event("startup")
 def on_startup():
     """앱 시작 시 테이블이 없으면 생성합니다."""
     Base.metadata.create_all(bind=engine)
     print("✅ 데이터베이스(mvc_app.db) 및 'users' 테이블이 준비되었습니다.")
+    # mvc_app.db 파일에 users 테이블 생김!🏠 빈 users 테이블 완성
 
 # --- Controller/Router: 사용자 요청 처리 ---
+# 어디서든 Depends(get_db)만 쓰면 세션이 마법처럼 제공돼요! 🎩✨
 
 # 1. 사용자 생성 (CREATE)
 @app.post("/users/", response_model=UserResponse, status_code=status.HTTP_201_CREATED)

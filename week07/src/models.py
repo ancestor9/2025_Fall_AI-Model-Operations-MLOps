@@ -4,9 +4,10 @@ from database import Base # database.py에서 정의한 Base 임포트
 
 # --- SQLAlchemy ORM 모델 (DB 테이블 구조) ---
 class DBUser(Base):
-    """'users' 테이블을 정의하는 ORM 모델"""
-    __tablename__ = "users"
-
+    """'users' 테이블을 정의하는 ORM 모델 """
+    __tablename__ = "users"  # 테이블 이름 지정
+    
+    ''' 테이블 컬럼 정의'''
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     email = Column(String, unique=True, index=True)
