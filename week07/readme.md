@@ -10,7 +10,6 @@
 #### 2.4. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
 - shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(지난 주)를 sqlite3로 만들어 보기
 - CRUD를 with 구문 (context manager)으로 구성하기
-- faker로 가상데이터를 만들어 CRUD 실습하기
 ### 3. 과제 수행하기 
 #### 3.1. 요구사항 정의
 - (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
