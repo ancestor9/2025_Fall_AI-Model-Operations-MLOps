@@ -13,7 +13,7 @@ engine = create_engine(
 )
 
 # SessionLocal = "세션을 찍어내는 공장" 🏭 세션 공장 완성 (필요할 때마다 세션 발급)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine) # Class
 
 # SQLAlchemy 모델의 기본 클래스
 # Base = "모든 테이블의 기본 설계도"📐 기본 건축 설계도
@@ -23,7 +23,7 @@ Base = declarative_base()
 # FastAPI DB 세션 의존성 함수 (Controller에 주입됨)
 # 📍 세션 제공 함수
 def get_db():
-    db = SessionLocal()     # ① 새 세션 발급
+    db = SessionLocal()     # ① 새 세션 발급, 세션 인스턴스 생성
     try:
         yield db            # ② 세션 제공 (임시 사용권)
     finally:
