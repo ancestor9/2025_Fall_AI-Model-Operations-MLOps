@@ -5,6 +5,11 @@
 #### 2.1. Text files
 #### 2.2. Buffered binary files
 #### 2.3. Raw binary files
+$$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (\text{bytes}) \xleftarrow{\text{Buffered I/O}} \text{운영체제} (\text{bytes}) \xleftarrow{\text{Raw I/O}} \text{디스크}$$
+-       Text I/O: 프로그래머가 f.write("안녕하세요\n") (str) 호출 --> 문자열을 바이트로 인코딩
+        Buffered I/O: 인코딩된 바이트를 버퍼에 저장하고 관리 --? 버퍼가 차면 Raw I/O로 플러시
+        Raw I/O: 버퍼링된 바이트 데이터를 운영체제에 전달하여 실제 디스크에 기록합니다.
+
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
 #### 2.4. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
