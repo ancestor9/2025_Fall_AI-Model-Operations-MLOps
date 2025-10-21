@@ -252,18 +252,21 @@ if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=7860)
     
 #################################################GRDIO INTEGRATION WITH FASTAPI BELOW##################################################
-'''
-# 🏁 FastAPI + Gradio 통합 실행
-@app.get("/")
-def read_root():
-    return {"message": "Go to /gradio for the EDA dashboard."}
+# separate services in the sense that they are running on different ports and handle different requests:
+# FastAPI: Handles requests to its main port (e.g., http://127.0.0.1:8000/) and serves the root endpoint /.
+# Gradio: Handles requests to its own port (http://127.0.0.1:7860/) and serves the interactive dashboard.
+
+# # 🏁 FastAPI + Gradio 별도 서비 실행
+# @app.get("/")
+# def read_root():
+#     return {"message": "Go to /gradio for the EDA dashboard."}
 
 
-@app.on_event("startup")
-async def startup_event():
-    import threading
-    demo = launch_gradio()
-    threading.Thread(target=lambda: demo.launch(server_name="127.0.0.1", server_port=7860, share=True)).start()
+# @app.on_event("startup")
+# async def startup_event():
+#     import threading
+#     demo = launch_gradio()
+#     threading.Thread(target=lambda: demo.launch(server_name="127.0.0.1", server_port=7860, share=True)).start()
 
 '''
 🖥 FastAPI (포트 8000)
@@ -275,6 +278,5 @@ async def startup_event():
                 └──▶ threading.Thread → Gradio(포트 7860)
                              │
                              └── Web UI (EDA Dashboard)
-'''
 '''
 ###########################################################
