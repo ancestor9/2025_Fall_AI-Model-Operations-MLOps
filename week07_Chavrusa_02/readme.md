@@ -1,4 +1,6 @@
 ## 요구사항(Requirements)
+- AdventureWorks-Sales 데이터를 다운받아 sqlite3에 저장한 후 FastAPI로 부가가치 서비스를 제고하라(데이터분석, 요약, 예측 등)
+  
 #### 1. 데이터 수집
 #### 2. 데이터 전처리
 #### 3. 기초 통계분석 및 EDA
