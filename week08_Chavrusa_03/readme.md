@@ -1,6 +1,6 @@
 ## 학습 목표
 - 모듈에 대한 상대경로 이해
-- Streamlit 실습[](https://streamlit.io/#install) 
+- [Streamlit 실습](https://streamlit.io/#install) 
 
 
 ## 🧱 실습 과제: Chinook Dashboard 구축 (MVC 아키텍처 기반)
