@@ -1,3 +1,8 @@
+## 학습 목표
+- 모듈에 대한 상대경로 이해
+- Streamlit 실습[](https://streamlit.io/#install) 
+
+
 ## 🧱 실습 과제: Chinook Dashboard 구축 (MVC 아키텍처 기반)
 ### ✅ **단계 1: 프로젝트 구조 생성 및 Model (`sqlite3`) 구현**
 #### 📁 디렉토리 구조
