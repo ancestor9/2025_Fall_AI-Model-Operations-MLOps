@@ -1,6 +1,6 @@
-# 🧱 실습 과제: Chinook Dashboard 구축 (MVC 아키텍처 기반)
-## ✅ **단계 1: 프로젝트 구조 생성 및 Model (`sqlite3`) 구현**
-### 📁 디렉토리 구조
+## 🧱 실습 과제: Chinook Dashboard 구축 (MVC 아키텍처 기반)
+### ✅ **단계 1: 프로젝트 구조 생성 및 Model (`sqlite3`) 구현**
+#### 📁 디렉토리 구조
 Chinook_Dashboard/
 ├── backend/
 │ ├── database.py
@@ -9,7 +9,7 @@ Chinook_Dashboard/
 ├── frontend/
 │ └── app.py
 
-# 🧱 Chinook Dashboard 실습 요구사항
+## 🧱 Chinook Dashboard 실습 요구사항
 
 1. `Chinook_Dashboard/` 폴더 생성 후 `backend/`, `frontend/`, `Chinook.sqlite` 준비  
 2. `backend/database.py`에서 `sqlite3`로 DB 연결 및 쿼리 실행 함수 구현  
