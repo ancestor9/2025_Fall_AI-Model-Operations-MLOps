@@ -2,7 +2,7 @@
 [streamlit 배우기](https://streamlit.io/#install)
 <img src ="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*RYeoECM1Xrx8eMU1M7_DGw.png">
 
-### Task 3. Sqlite3_CRUD 만들기
+### Task 1. Sqlite3_CRUD 만들기
 - shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(week7 과제)를 sqlite3로 streamlit UI로 만들어 보기
 - CRUD를 with 구문 (context manager)으로 구성하기 
 
