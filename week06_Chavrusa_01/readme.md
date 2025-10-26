@@ -3,6 +3,7 @@
 -             a. POST 방식을 UI에 표현할 필요성 이해  ----> api.py
               b. UI화면이 별도 필요하여 별도 웹서버    ----> app_gradio.py with api.py
               c. Front/BackEnd 별도 서버로 snippet    ----> gradio_fastapi_twoservers.py
+              d. gradio를 FastAPI에 Mount 단일 서버   ----> main_gradio_mount.py
 - 1.2. gradio를 FastAPI에 Mount / Seperate port 실습 ----> gradio_mount.py
 
 
