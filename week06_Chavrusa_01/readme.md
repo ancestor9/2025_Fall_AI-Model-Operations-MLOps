@@ -1,4 +1,9 @@
-### 1. mini project : Gradio와 FastAPI 별도 서버
+### 1. gradio UI
+- gradio를 FastAPI에 Mount / Seperate port 실습 ----> gradio_mount.py
+
+
+
+### 2. mini project : Gradio와 FastAPI 별도 서버
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 에측모형을 *.pkl 파일로 저장
 - (백엔드) api.py: FastAPI 백엔드 (저장된 모델을 로드하여 API 제공)
 - (프론트엔드) app_gradio.py: Gradio 프론트엔드 (API 호출을 통해 사용자 인터페이스 제공)
@@ -10,7 +15,7 @@
 | 프론트엔드 (클라이언트) | app_gradio.py   | Gradio 인터페이스 (UI/UX)      | http://127.0.0.1:7860      | predict_species()              | - 사용자에게 슬라이더 입력 제공<br>- FastAPI 서버(/predict) 호출<br>- 예측 결과를 UI에 표시 |
 | 연결 URL          | app_gradio.py   | requests 모듈                  | http://127.0.0.1:8000/predict/ | requests.post(FASTAPI_URL, ...) | - Gradio 클라이언트가 FastAPI 서버에 데이터 전송<br>- API 호출을 통해 예측 요청 수행 |
 
-### 2. mini project  : 단일 서버
+### 3. mini project  : 단일 서버
 - 🚀 Gradio Mount 통합 간결 코드 (main_gradio_mount.py) :
 -     train_model.py를 먼저 실행하여 iris_model.pkl 파일이 생성되어 있다는 가정 하에 작동
       브라우저 주소창에 http://127.0.0.1:8000/api/predict  접근하는 것은 기본적으로 GET HTTP 메소드를 사용하면
