@@ -1,4 +1,5 @@
 ### 1. gradio UI
+- FastAPI로 머신러닝 학습/예측 ----> api.py
 - gradio를 FastAPI에 Mount / Seperate port 실습 ----> gradio_mount.py
 
 
