@@ -5,7 +5,7 @@
               c. Front/BackEnd 별도 서버로 snippet    ----> gradio_fastapi_twoservers.py
               d. gradio를 FastAPI에 Mount 단일 서버   ----> main_gradio_mount.py
 
-#### 2. mini project : Gradio와 FastAPI 별도 서버 상세 설명
+### 2. mini project : Gradio와 FastAPI 별도 서버 상세 설명
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 에측모형을 *.pkl 파일로 저장
 - (백엔드) api.py: FastAPI 백엔드 (저장된 모델을 로드하여 API 제공)
 - (프론트엔드) app_gradio.py: Gradio 프론트엔드 (API 호출을 통해 사용자 인터페이스 제공)
