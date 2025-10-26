@@ -15,7 +15,8 @@
 
 ## 주요 내용
 #### 1. 네트워크 통신 (9시간)
--     HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port), - [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
+-     HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port),
+- [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
 #### 2. FAST API (25시간)
 -     Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
       Github에 제출할 Homeworks
@@ -24,8 +25,9 @@
       - homework_02: 고객이 온라인 상품에 대해 가격 견적을 요청하면 세금 10%를 포함한 세후 가격을 제시
       Mini project 1 (데이터수집-분석-예측, scikit-learn의 toy data로 예측 웹 서비스 만들기 등)
 #### 3. 생성형 AI로 chatbot 만들기 (11시간)
--      Deep Learning, LLM API 개발 이해 --> [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
-      Mini project 2 (LLM을 이용한 서비스 만들기)
+-      Deep Learning, LLM API 개발 이해 -->
+-  [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
+      Mini project (LLM을 이용한 서비스 만들기)
 #### 4. 과제 제출 (~11.17)
 -     교과목과 실습실 배정 및 시각화(학점 60%)
       배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
