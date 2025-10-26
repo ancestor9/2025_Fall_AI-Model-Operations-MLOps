@@ -1,13 +1,11 @@
-### 1. gradio UI
+### 1. gradio + FastAPI (단일 서버, 복수 서버)
 - 1.1. FastAPI로 머신러닝 학습/예측 ----> api.py(서버), app_gradio.py(클아이언트)
 -             a. POST 방식을 UI에 표현할 필요성 이해  ----> api.py
               b. UI화면이 별도 필요하여 별도 웹서버    ----> app_gradio.py with api.py
               c. Front/BackEnd 별도 서버로 snippet    ----> gradio_fastapi_twoservers.py
-- 1.2. gradio를 FastAPI에 Mount / Seperate port 실습 ----> gradio_mount.py
+              d. gradio를 FastAPI에 Mount 단일 서버   ----> main_gradio_mount.py
 
-
-
-### 2. mini project : Gradio와 FastAPI 별도 서버
+### 2. mini project : Gradio와 FastAPI 별도 서버 상세 설명
 - (모델학습 및 저장) train_model.py: 모델을 학습시키고 에측모형을 *.pkl 파일로 저장
 - (백엔드) api.py: FastAPI 백엔드 (저장된 모델을 로드하여 API 제공)
 - (프론트엔드) app_gradio.py: Gradio 프론트엔드 (API 호출을 통해 사용자 인터페이스 제공)
