@@ -1,24 +1,5 @@
 ## 교과목 내용
-### 1. 네트워크 통신 (9시간)
-- HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port), - [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
-  
-### 2. FAST API (25시간)
-- Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
-- Github에 제출할 Homeworks
--     - homework_01: 고객(성명, 연령, 주소, 전화번호)과 상품(상품명, 가격, 설명 등) 정보를 사전형으로 생성하고
-        '/'에는 모든 정보를 조회하고, '/customers' 혹은 '/products'에서는 정보의 검색 가능
-      - homework_02: 고객이 온라인 상품에 대해 가격 견적을 요청하면 세금 10%를 포함한 세후 가격을 제시
-- Mini project 1 (데이터수집-분석-예측, scikit-learn의 toy data로 예측 웹 서비스 만들기 등)
-  
-### 2. 생성형 AI로 chatbot 만들기 (11시간)
-- Deep Learning, LLM API 개발 이해 --> [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
-- Mini project 2 (LLM을 이용한 서비스 만들기)
 
-### 3. 과제 제출 (~11.17)
-- 교과목과 실습실 배정 및 시각화(학점 60%)
-- 배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
-
-#### 학습내용
 | 주차 | 핵심 내용 |
 |:----:|:-----------|
 | 1주차 | 네트워크 기초와 Python 사용 이유에 대한 설명.<br>LLM에 질문하기를 통해 IP 주소, Wi-Fi, TCP/UDP, 소켓 프로그래밍 등 네트워크 기본 개념 학습. |
@@ -32,6 +13,22 @@
 | 9주차 | **Streamlit (Front End)**과 FastAPI (Back End) 연동 구조 시각화.<br>sqlite3 CRUD 기능을 Streamlit UI로 구현하는 과제 제시. |
 | 10주차 | API Router Review와 HTTP Request/Response 심화.<br>Jinja2 템플릿, Bootstrap, FastAPI with DB 및 ngrok을 사용한 외부 접속 방법 학습. |
 
+## 주요 내용
+#### 1. 네트워크 통신 (9시간)
+-     HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port), - [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
+#### 2. FAST API (25시간)
+-     Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
+      Github에 제출할 Homeworks
+-     - homework_01: 고객(성명, 연령, 주소, 전화번호)과 상품(상품명, 가격, 설명 등) 정보를 사전형으로 생성하고
+        '/'에는 모든 정보를 조회하고, '/customers' 혹은 '/products'에서는 정보의 검색 가능
+      - homework_02: 고객이 온라인 상품에 대해 가격 견적을 요청하면 세금 10%를 포함한 세후 가격을 제시
+      Mini project 1 (데이터수집-분석-예측, scikit-learn의 toy data로 예측 웹 서비스 만들기 등)
+#### 3. 생성형 AI로 chatbot 만들기 (11시간)
+-      Deep Learning, LLM API 개발 이해 --> [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
+      Mini project 2 (LLM을 이용한 서비스 만들기)
+#### 4. 과제 제출 (~11.17)
+-     교과목과 실습실 배정 및 시각화(학점 60%)
+      배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
    
 #### 참고 자료
 ![](https://www.oreilly.com/covers/urn:orm:book:9781098135492/400w/)
