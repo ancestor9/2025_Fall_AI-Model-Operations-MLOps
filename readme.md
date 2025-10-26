@@ -30,6 +30,7 @@
 -     교과목과 실습실 배정 및 시각화(학점 60%)
       배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
 [Opal로 구현 예제](https://opal.google/?flow=drive:/14_wnmShL2IKED5HJxbeYVhXDfALrGyH2&shared&mode=app)
+[관련코드](https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95_%EC%A0%95%EC%88%98%EA%B3%84%ED%9A%8D%EB%B2%95.ipynb)
    
 #### 참고 자료
 ![](https://www.oreilly.com/covers/urn:orm:book:9781098135492/400w/)
