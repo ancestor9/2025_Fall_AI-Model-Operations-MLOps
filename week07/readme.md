@@ -15,3 +15,6 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 #### 2.4. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
 - shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(지난 주)를 sqlite3로 만들어 보기
 - CRUD를 with 구문 (context manager)으로 구성하기
+
+#### 2.5. python CLI(Command Line Interface)로 sqlite3 CRUD 실습
+- sqlite3_introduction.ipynb 을 따라하기
