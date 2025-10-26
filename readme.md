@@ -14,7 +14,7 @@
 - Deep Learning, LLM API 개발 이해 --> [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
 - Mini project 2 (LLM을 이용한 서비스 만들기)
 
-### 3. 과제 제출 (~11.3)
+### 3. 과제 제출 (~11.17)
 - 교과목과 실습실 배정 및 시각화(학점 60%)
 - 배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
    
