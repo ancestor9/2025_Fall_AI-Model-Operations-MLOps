@@ -29,6 +29,7 @@
 #### 4. 과제 제출 (~11.17)
 -     교과목과 실습실 배정 및 시각화(학점 60%)
       배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
+[Opal로 구현 예제](https://opal.google/?flow=drive:/14_wnmShL2IKED5HJxbeYVhXDfALrGyH2&shared&mode=app)
    
 #### 참고 자료
 ![](https://www.oreilly.com/covers/urn:orm:book:9781098135492/400w/)
