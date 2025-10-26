@@ -13,7 +13,7 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
 
-### 2. FastAPI + UI with Database
+### 2. FastAPI + UI with Database(Data Persisitency)
 #### 2.1. python CLI(Command Line Interface)로 sqlite3 CRUD 실습
 - sqlite3_introduction.ipynb 을 따라하기
 
