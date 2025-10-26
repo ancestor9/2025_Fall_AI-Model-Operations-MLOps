@@ -10,7 +10,7 @@
 | 6주차 | Python I/O (Text, Buffered, Raw binary files) 세 가지 방식 설명.<br>FastAPI + UI with Database를 위해 python CLI, sqlite3를 이용한 CRUD 실습 진행. |
 | 7주차 | FastAPI 기본 (Path, Query, Header, Body) 및 Router 복습.<br>CRUD, Pydantic, File I/O, Server-Client 구조 및 LLM(Gemini) 활용 학습 목표. |
 | 8주차 | 데이터베이스 연동을 위한 FastAPI CRUD 구현 요구사항 정의.<br>Pydantic, SQLAlchemy, Dependency Injection, 그리고 Monolithic/Microservices 아키텍처 설명. |
-| 9주차 | **Streamlit (Front End)**과 FastAPI (Back End) 연동 구조 시각화.<br>sqlite3 CRUD 기능을 Streamlit UI로 구현하는 과제 제시. |
+| 9주차 | Streamlit (Front End)과 FastAPI (Back End) 연동 구조 시각화.<br>sqlite3 CRUD 기능을 Streamlit UI로 구현하는 과제, 인증과 인가 방식(supabase)|
 | 10주차 | API Router Review와 HTTP Request/Response 심화.<br>Jinja2 템플릿, Bootstrap, FastAPI with DB 및 ngrok을 사용한 외부 접속 방법 학습. |
 
 ## 주요 내용
