@@ -1,4 +1,4 @@
-### 1. FastAPI Review
+### 0. FastAPI Review
 #### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
 ### 1. Python I/O 세 가지 방식 : file_operation.py
