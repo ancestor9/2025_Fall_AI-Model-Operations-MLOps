@@ -1,7 +1,8 @@
 ### 1. gradio UI
 - 1.1. FastAPI로 머신러닝 학습/예측 ----> api.py(서버), app_gradio.py(클아이언트)
--             POST 방식을 UI에 표현할 필요성 이해  ----> api.py
-              UI화면이 별도 필요하여 별도 웹서버   ----> app_gradio.py with api.py
+-             a. POST 방식을 UI에 표현할 필요성 이해  ----> api.py
+              b. UI화면이 별도 필요하여 별도 웹서버    ----> app_gradio.py with api.py
+              c. Front/BackEnd 별도 서버로 snippet    ----> gradio_fastapi_twoservers.py
 - 1.2. gradio를 FastAPI에 Mount / Seperate port 실습 ----> gradio_mount.py
 
 
