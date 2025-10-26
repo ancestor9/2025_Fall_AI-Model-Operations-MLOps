@@ -2,9 +2,9 @@
 #### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
 ### 1. Python I/O 세 가지 방식 : file_operation.py
--        2.1. Text files
-        2.2. Buffered binary files
-        2.3. Raw binary files
+-         2.1. Text files
+          2.2. Buffered binary files
+          2.3. Raw binary files
 $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (\text{bytes}) \xleftarrow{\text{Buffered I/O}} \text{운영체제} (\text{bytes}) \xleftarrow{\text{Raw I/O}} \text{디스크}$$
 -       Text I/O: 프로그래머가 f.write("안녕하세요\n") (str) 호출 --> 문자열을 바이트로 인코딩
         Buffered I/O: 인코딩된 바이트를 버퍼에 저장하고 관리 --? 버퍼가 차면 Raw I/O로 플러시
