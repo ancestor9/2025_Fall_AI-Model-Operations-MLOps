@@ -13,11 +13,14 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
 
-### 2. FastAPI + UI with Database(Data Persisitency)
-#### 2.1. python CLI(Command Line Interface)로 sqlite3 CRUD 실습
+### 2. gradio UI
+- gradio를 FastAPI에 Mount / Seperate port 실습 ----> gradio_mount.py
+
+### 3. FastAPI + UI with Database(Data Persisitency)
+#### 3.1. python CLI(Command Line Interface)로 sqlite3 CRUD 실습
 - sqlite3_introduction.ipynb 을 따라하기
 
-#### 2.2. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
+#### 3.2. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
 - shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(지난 주)를 sqlite3로 만들어 보기
 -         CRUD를 with 구문 (context manager)으로 구성하기
 - "chinook DB"를 CRUD 실습과제 수행
