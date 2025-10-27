@@ -1,5 +1,5 @@
 ## 교과목 내용
-### 5번의 실습과제 수행 및 발표
+### 5번의 실습과제, 기말과제(교과목/강의실 재정 알고리즘) 제출 및 발표
 | 주차 | 핵심 내용 |
 |:----:|:-----------|
 | 1주차 | 네트워크 기초와 Python 사용 이유에 대한 설명.<br>LLM에 질문하기를 통해 IP 주소, Wi-Fi, TCP/UDP, 소켓 프로그래밍 등 네트워크 기본 개념 학습. |
@@ -10,12 +10,12 @@
 | 6주차 | Python I/O (Text, Buffered, Raw binary files) 세 가지 방식 설명.<br>FastAPI + UI with Database를 위해 python CLI, sqlite3를 이용한 CRUD 실습 진행. |
 | 7주차 | FastAPI 기본 (Path, Query, Header, Body) 및 Router 복습.<br>CRUD, Pydantic, File I/O, Server-Client 구조 및 LLM(Gemini) 활용 학습 목표. |
 | 8주차 | 데이터베이스 연동을 위한 FastAPI CRUD 구현 요구사항 정의.<br>Pydantic, SQLAlchemy, Dependency Injection, 그리고 Monolithic/Microservices 아키텍처 설명. |
-| 9주차 | Streamlit (Front End)과 FastAPI (Back End) 연동 구조 시각화.<br>sqlite3 CRUD 기능을 Streamlit UI로 구현하는 과제, 인증과 인가 방식(supabase)|
+| 9주차 | Streamlit (Front End)과 FastAPI (Back End) 연동 구조 시각화.<br>sqlite3 CRUD 기능을 Streamlit UI로 구현하는 과제, 인증과 인가 방식(supabase), https://www.youtube.com/watch?v=OJIR1pA7Ceo&si=5Y6Vw3drbFRhXHX_, https://www.youtube.com/watch?v=ip87CHxtoJY&si=rOaVfFoxhIx5UmcQ |
 | 10주차 | API Router Review와 HTTP Request/Response 심화.<br>Jinja2 템플릿, Bootstrap, FastAPI with DB 및 ngrok을 사용한 외부 접속 방법 학습. |
 
 ## 주요 내용
 #### 1. 네트워크 통신 (9시간)
--     HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port), - [Buffer/Stream](https://docs.python.org/ko/3.13/library/io.html)
+-     HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port),
 #### 2. FAST API (25시간)
 -     Modern Web Architecture : Fast API, Database(sqlite3) & gradio with ngrok
       Github에 제출할 Homeworks
@@ -24,11 +24,12 @@
       - homework_02: 고객이 온라인 상품에 대해 가격 견적을 요청하면 세금 10%를 포함한 세후 가격을 제시
       Mini project 1 (데이터수집-분석-예측, scikit-learn의 toy data로 예측 웹 서비스 만들기 등)
 #### 3. 생성형 AI로 chatbot 만들기 (11시간)
--      Deep Learning, LLM API 개발 이해 --> [Gemini API: Getting started with Gemini models](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Get_started.ipynb)
-      Mini project 2 (LLM을 이용한 서비스 만들기)
-#### 4. 과제 제출 (~11.17)
+-      Deep Learning, LLM API 개발 이해 --> Mini project (LLM을 이용한 서비스 만들기)
+#### 4. 기말 과제 제출 (~11.17)
 -     교과목과 실습실 배정 및 시각화(학점 60%)
       배정 알고리즘(선형계획법, 유전자알고리즘 등) 개발과 FastAPI로 웹 서비스
+- [Opal로 구현 예제](https://opal.google/?flow=drive:/14_wnmShL2IKED5HJxbeYVhXDfALrGyH2&shared&mode=app)
+- [교과목/강의실 배정 알고리즘](https://github.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/blob/main/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95_%EC%A0%95%EC%88%98%EA%B3%84%ED%9A%8D%EB%B2%95.ipynb)
    
 #### 참고 자료
 ![](https://www.oreilly.com/covers/urn:orm:book:9781098135492/400w/)
