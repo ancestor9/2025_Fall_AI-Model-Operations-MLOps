@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>IRIS Species Predictor</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* ... (CSS Styles remain the same) ... */
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 8px;
+        background: transparent;
+        cursor: pointer;
+      }
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 20px;
+        width: 20px;
+        background-color: #137fec;
+        border-radius: 50%;
+        border: none;
+        margin-top: -6px;
+        transition: transform 0.2s ease-in-out;
+      }
+      input[type="range"]::-moz-range-thumb {
+        height: 20px;
+        width: 20px;
+        background-color: #137fec;
+        border-radius: 50%;
+        border: none;
+        transition: transform 0.2s ease-in-out;
+      }
+      input[type="range"]::-webkit-slider-runnable-track {
+        width: 100%;
+        height: 8px;
+        background-color: #e2e8f0;
+        border-radius: 4px;
+      }
+      .dark input[type="range"]::-webkit-slider-runnable-track {
+        background-color: #334155;
+      }
+      input[type="range"]::-moz-range-track {
+        width: 100%;
+        height: 8px;
+        background-color: #e2e8f0;
+        border-radius: 4px;
+      }
+      .dark input[type="range"]::-moz-range-track {
+        background-color: #334155;
+      }
+    </style>
+  </head>
+  <body
+    class="font-display bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200"
+  >
+    <div class="relative flex min-h-screen w-full flex-col">
+      <header
+        class="sticky top-0 z-10 border-b border-slate-200 dark:border-slate-800 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm"
+      >
+        <div class="container mx-auto px-6">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div class="text-primary size-6">
+                <svg
+                  fill="none"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    clip-rule="evenodd"
+                    d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+              <h1
+                class="text-lg font-bold leading-tight tracking-[-0.015em] text-slate-900 dark:text-slate-50"
+              >
+                IRIS Species Predictor
+              </h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="flex-grow">
+        <div class="container mx-auto px-6 py-12">
+          <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div class="flex flex-col gap-8">
+              <div>
+                <h2
+                  class="text-4xl font-black leading-tight tracking-[-0.033em] text-slate-900 dark:text-slate-50"
+                >
+                  Input IRIS Data
+                </h2>
+                <p
+                  class="mt-2 text-base font-normal leading-normal text-slate-500 dark:text-slate-400"
+                >
+                  Adjust the measurements below to predict the Iris species.
+                </p>
+              </div>
+              <div class="space-y-8">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                  <div class="flex flex-col">
+                    <div class="flex items-baseline justify-between">
+                      <p
+                        class="text-base font-medium leading-normal text-slate-700 dark:text-slate-300"
+                      >
+                        Sepal Length
+                      </p>
+                      <span id="sepal-length-value" class="text-lg font-bold text-primary"
+                        >5.1 cm</span
+                      >
+                    </div>
+                    <input
+                      id="sepal-length-range"
+                      class="mt-3 h-2 w-full cursor-pointer appearance-none rounded-full bg-slate-200 dark:bg-slate-700"
+                      max="7.9"
+                      min="4.3"
+                      step="0.1"
+                      type="range"
+                      value="5.1"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex items-baseline justify-between">
+                      <p
+                        class="text-base font-medium leading-normal text-slate-700 dark:text-slate-300"
+                      >
+                        Sepal Width
+                      </p>
+                      <span id="sepal-width-value" class="text-lg font-bold text-primary"
+                        >3.5 cm</span
+                      >
+                    </div>
+                    <input
+                      id="sepal-width-range"
+                      class="mt-3 h-2 w-full cursor-pointer appearance-none rounded-full bg-slate-200 dark:bg-slate-700"
+                      max="4.4"
+                      min="2.0"
+                      step="0.1"
+                      type="range"
+                      value="3.5"
+                    />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                  <div class="flex flex-col">
+                    <div class="flex items-baseline justify-between">
+                      <p
+                        class="text-base font-medium leading-normal text-slate-700 dark:text-slate-300"
+                      >
+                        Petal Length
+                      </p>
+                      <span id="petal-length-value" class="text-lg font-bold text-primary"
+                        >1.4 cm</span
+                      >
+                    </div>
+                    <input
+                      id="petal-length-range"
+                      class="mt-3 h-2 w-full cursor-pointer appearance-none rounded-full bg-slate-200 dark:bg-slate-700"
+                      max="6.9"
+                      min="1.0"
+                      step="0.1"
+                      type="range"
+                      value="1.4"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <div class="flex items-baseline justify-between">
+                      <p
+                        class="text-base font-medium leading-normal text-slate-700 dark:text-slate-300"
+                      >
+                        Petal Width
+                      </p>
+                      <span id="petal-width-value" class="text-lg font-bold text-primary"
+                        >0.2 cm</span
+                      >
+                    </div>
+                    <input
+                      id="petal-width-range"
+                      class="mt-3 h-2 w-full cursor-pointer appearance-none rounded-full bg-slate-200 dark:bg-slate-700"
+                      max="2.5"
+                      min="0.1"
+                      step="0.1"
+                      type="range"
+                      value="0.2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mt-8">
+                <button
+                  id="predict-button"
+                  class="flex h-12 min-w-[84px] w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-primary px-5 text-base font-bold leading-normal tracking-[0.015em] text-slate-50 transition-colors hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+                >
+                  <span class="truncate">Predict</span>
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-col rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-100 dark:bg-slate-800/50 p-8"
+            >
+              <div class="flex flex-col items-center">
+                <h3 class="text-xl font-bold text-slate-900 dark:text-slate-50">
+                  Prediction Result
+                </h3>
+                <p class="mt-1 text-center text-slate-500 dark:text-slate-400">
+                  The model predicts the species is:
+                </p>
+                <div id="main-prediction-result" class="mt-6 flex w-full flex-col items-center gap-4">
+                  <img
+                    id="main-iris-image"
+                    alt="Iris Setosa"
+                    class="h-40 w-40 rounded-lg object-cover ring-4 ring-primary ring-offset-4 ring-offset-slate-100 dark:ring-offset-slate-800/50"
+                    src="/static/iris_setosa.jpg"
+                  />
+                  <div class="text-center">
+                    <p id="main-iris-species" class="text-2xl font-bold text-primary">
+                      Iris Setosa
+                    </p>
+                    <p id="main-iris-index" class="text-sm text-slate-500 dark:text-slate-400">
+                      Prediction: 0
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="other-species-result"
+                class="mt-8 pt-8 border-t border-slate-300 dark:border-slate-700"
+              >
+                <h4 class="text-center font-semibold text-slate-600 dark:text-slate-300">
+                  Other Species
+                </h4>
+                <div class="mt-4 grid grid-cols-2 gap-4">
+                  <div id="other-species-1" class="flex flex-col items-center opacity-60">
+                    <img
+                      alt="Iris Versicolor"
+                      class="h-24 w-24 rounded-lg object-cover"
+                      src="/static/iris_versicolor.jpg"
+                    />
+                    <p class="mt-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                      Iris Versicolor
+                    </p>
+                  </div>
+                  <div id="other-species-2" class="flex flex-col items-center opacity-60">
+                    <img
+                      alt="Iris Virginica"
+                      class="h-24 w-24 rounded-lg object-cover"
+                      src="/static/iris_virginica.jpg"
+                    />
+                    <p class="mt-2 text-sm font-medium text-slate-700 dark:text-slate-300">
+                      Iris Virginica
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="border-t border-slate-200 dark:border-slate-800">
+        <div class="container mx-auto px-6 py-6">
+          <p class="text-center text-sm text-slate-500 dark:text-slate-400">
+            © 2024 IRIS Species Predictor. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+        const ranges = [
+            { id: "sepal-length", unit: " cm" },
+            { id: "sepal-width", unit: " cm" },
+            { id: "petal-length", unit: " cm" },
+            { id: "petal-width", unit: " cm" },
+        ];
+
+        // 1. Update range value display
+        ranges.forEach(({ id, unit }) => {
+            const rangeInput = document.getElementById(`${id}-range`);
+            const valueSpan = document.getElementById(`${id}-value`);
+            
+            rangeInput.addEventListener('input', (event) => {
+                valueSpan.textContent = event.target.value + unit;
+            });
+        });
+
+        // 2. Prediction logic
+        document.getElementById('predict-button').addEventListener('click', async () => {
+            const sepal_length = parseFloat(document.getElementById('sepal-length-range').value);
+            const sepal_width = parseFloat(document.getElementById('sepal-width-range').value);
+            const petal_length = parseFloat(document.getElementById('petal-length-range').value);
+            const petal_width = parseFloat(document.getElementById('petal-width-range').value);
+
+            const data = {
+                sepal_length,
+                sepal_width,
+                petal_length,
+                petal_width
+            };
+            
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const result = await response.json();
+                updatePredictionUI(result);
+
+            } catch (error) {
+                console.error('Prediction failed:', error);
+                alert('Failed to get prediction. Check the server status.');
+            }
+        });
+
+        // 3. UI Update Function
+        const SPECIES = ["Iris Setosa", "Iris Versicolor", "Iris Virginica"];
+        const IMAGE_PATHS = {
+            0: "/static/iris_setosa.jpg",
+            1: "/static/iris_versicolor.jpg",
+            2: "/static/iris_virginica.jpg",
+        };
+
+        function updatePredictionUI(result) {
+            const predicted_index = result.prediction;
+            const predicted_species = SPECIES[predicted_index];
+            const predicted_image = IMAGE_PATHS[predicted_index];
+
+            // Main Prediction Update
+            document.getElementById('main-iris-image').src = predicted_image;
+            document.getElementById('main-iris-image').alt = predicted_species;
+            document.getElementById('main-iris-species').textContent = predicted_species;
+            document.getElementById('main-iris-index').textContent = `Prediction: ${predicted_index}`;
+
+            // Other Species Update (Opacity/Order adjustment for visual feedback)
+            const other_indices = [0, 1, 2].filter(i => i !== predicted_index);
+            const other_elements = [
+                document.getElementById('other-species-1'), 
+                document.getElementById('other-species-2')
+            ];
+
+            // Reset all to opacity 60 and remove ring
+            [...other_elements, document.getElementById('main-prediction-result')].forEach(el => {
+                if (el.id !== 'main-prediction-result') {
+                    el.classList.remove('opacity-100');
+                    el.classList.add('opacity-60');
+                    el.querySelector('img').classList.remove('ring-4', 'ring-primary', 'ring-offset-4', 'ring-offset-slate-100', 'dark:ring-offset-slate-800/50');
+                } else {
+                    el.querySelector('img').classList.add('ring-4', 'ring-primary', 'ring-offset-4', 'ring-offset-slate-100', 'dark:ring-offset-slate-800/50');
+                }
+            });
+
+            // Set main prediction to opacity 100 implicitly via image ring
+            
+            // Update and dim other species
+            other_elements.forEach((el, index) => {
+                const indexToDisplay = other_indices[index];
+                const speciesName = SPECIES[indexToDisplay];
+                
+                el.querySelector('img').src = IMAGE_PATHS[indexToDisplay];
+                el.querySelector('img').alt = speciesName;
+                el.querySelector('p').textContent = speciesName;
+                el.classList.add('opacity-60'); 
+            });
+        }
+
+        // Initial Prediction on load (Optional, to populate default values)
+        window.onload = () => {
+            document.getElementById('predict-button').click(); 
+        };
+    </script>
+  </body>
+</html>
