@@ -149,7 +149,7 @@ def launch_gradio():
     return demo
 
 
-# 🏁 FastAPI + Gradio 통합 실행
+# 🏁 FastAPI + Gradio 별도 서버 실행
 @app.get("/")
 def read_root():
     return {"message": "Go to /gradio for the EDA dashboard."}
