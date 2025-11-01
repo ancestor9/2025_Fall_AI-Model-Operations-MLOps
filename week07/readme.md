@@ -1,7 +1,7 @@
 ### 0. FastAPI Review
 #### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
-### 1. Python I/O 세 가지 방식 : file_operation.py
+### 1. Python I/O 세 가지 방식 : file_operation.py으로 실습하기
 -         2.1. Text files
           2.2. Buffered binary files
           2.3. Raw binary files
@@ -18,7 +18,7 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 - Thunder Client 로 get, post 방식 실습 해보기(DB 이해)
 
 #### 2.2. python CLI(Command Line Interface)로 sqlite3 CRUD 실습
-- sqlite3_introduction.ipynb 을 따라하기
+- sqlite3_introduction.ipynb 을 따라하기 sqlite3_introduction.py로 따라하기
 
 #### 2.3. CRUD 과제 ([sqlite3](https://docs.python.org/3/library/sqlite3.html#sqlite3-tutorial))
 - shopping_list: List[str] = ["사과", "바나나", "우유"] 의 CRUD 예제(지난 주)를 sqlite3로 만들어 보기
