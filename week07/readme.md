@@ -1,7 +1,8 @@
 ### 0. FastAPI Review
 #### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
-### 1. Python I/O 세 가지 방식 : file_operation.py으로 실습하기
+### 1. Python I/O 세 가지 방식
+#### 1.1 file_operation.py으로 실습하기
 -         2.1. Text files
           2.2. Buffered binary files
           2.3. Raw binary files
@@ -12,6 +13,8 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
+  
+#### 1.2. file_upload.py로 실습하기
 
 ### 2. FastAPI + UI with Database(Data Persisitency)
 #### 2.1. week05 >> main.py
