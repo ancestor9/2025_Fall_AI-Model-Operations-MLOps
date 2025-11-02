@@ -1,0 +1,11 @@
+{
+    "servers": {
+        "fast-mcp-demo": {
+            "type": "stdio",
+            "command": "D:/2025_Fall_AI-Model-Operations-MLOps/.venv/Scripts/python.exe", 
+            "args": [
+                "${workspaceFolder}/week11/server.py"
+            ]
+        }
+    }
+}
