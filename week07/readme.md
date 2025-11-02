@@ -15,6 +15,9 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
   
 #### 1.2. file_upload.py로 비동기 실습하기
+- 1.2.1. await file.read()는 네트워크 I/O 작업(클라이언트로부터 데이터 수신)이며, 
+- 1.2.2. with open(...)은 로컬 디스크 I/O 작업(디스크에 쓰기)으로
+
 | 코드 | 주방에서의 역할 | 설명 |
 |------|------------------|------|
 | `file.read()` | 수프 끓이기 (시간이 오래 걸리는 I/O 작업) | 서버가 클라이언트로부터 대용량 파일을 수신하는 작업은 시간이 오래 걸림|
