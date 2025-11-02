@@ -14,7 +14,7 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
   
-#### 1.2. file_upload.py로 실습하기
+#### 1.2. file_upload.py로 비동기 실습하기
 | 코드 | 주방에서의 역할 | 설명 |
 |------|------------------|------|
 | `file.read()` | 수프 끓이기 (시간이 오래 걸리는 I/O 작업) | 서버가 클라이언트로부터 대용량 파일을 수신하는 작업은 시간이 오래 걸림|
