@@ -1,8 +1,10 @@
 from fastapi import FastAPI, File, UploadFile
 
-# UploadFile 객체의 read() 메서드는 비동기 함수
-
 app = FastAPI()
+
+#########################################################
+## UploadFile 객체의 read() 메서드는 비동기 함수
+#########################################################
 
 @app.post("/uploadfile/")
 async def create_upload_file(file: UploadFile):
@@ -20,6 +22,11 @@ async def create_upload_file(file: UploadFile):
     contents = await file.read(): 클라이언트가 보낸 파일 내용 전체를 메모리(RAM)에 바이너리 데이터로 로드하는 작업이 끝나면,
     with open(...): 파일 내용이 모두 메모리에 들어온 후에, 
     디스크에 새 파일을 열고 메모리(contents)의 내용을 디스크에 동기적으로 기록하는 작업을 수행
+    현재 수행중인 코드의 디렉ㅌ토리에 uploaded_files라는 하위 디렉토리가 존재한다고 가정
+    
+    1. await file.read()는 네트워크 I/O 작업(클라이언트로부터 데이터 수신)이며, 
+    2. with open(...)은 로컬 디스크 I/O 작업(디스크에 쓰기)으로, 
+    코드 상의 await 때문에 순차적으로 실행
     '''
     with open(f"uploaded_files/{file.filename}", "wb") as f:
         f.write(contents)
