@@ -2,6 +2,7 @@
 #### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
 ### 1. Python I/O 세 가지 방식
+#### File이란 무엇인가?
 #### 1.1 file_operation.py으로 실습하기
 -         2.1. Text files
           2.2. Buffered binary files
