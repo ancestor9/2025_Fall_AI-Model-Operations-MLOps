@@ -36,7 +36,7 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 | `contents =` | 끓은 수프를 그릇에 담기 (결과 저장) | 수프가 다 끓었을 때(파일 수신이 완료되었을 때), 셰프는 하던 일을 멈추고 돌아와 수프를 그릇(`contents`)에 담기. |
 | `with open(f"uploaded_files/{file.filename}", "wb") as f:` | 그릇을 꺼내 준비하기 (파일을 담을 공간 열기) | 수프를 담을 그릇(파일)을 준비하는 과정, `with open` 구문은 파일을 안전하게 열고 닫는 ‘자동 설거지 시스템’ 역할 |
 | `f.write(contents)` | 완성된 수프를 그릇에 붓기 (저장하기) | 끓인 수프(파일 내용)를 실제 그릇(저장소)에 담는 단계로, 이 과정을 통해 서버는 파일을 디스크에 안전하게 저장 |
-
+[소켓의 본질에 대한 이해](https://www.youtube.com/watch?v=3jQ2dBpiqPo)
 
 ### 2. FastAPI + UI with Database(Data Persisitency)
 #### 2.1. week05 >> main.py
