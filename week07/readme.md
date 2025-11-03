@@ -2,6 +2,7 @@
 #### [Using FastAPI to Build Python Web APIs : self study](https://realpython.com/fastapi-python-web-apis/)
 
 ### 1. Python I/O 세 가지 방식
+#### File이란 무엇인가?
 #### 1.1 file_operation.py으로 실습하기
 -         2.1. Text files
           2.2. Buffered binary files
@@ -14,7 +15,18 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
   
-#### 1.2. file_upload.py로 비동기 실습하기
+#### 1.2. file_upload.py로 비동기 실습하기 (File과 Socket 이해)
+##### Server-Client 파일 업로드 > 전송 > 읽고 > 쓰기 이론적 이해 및 실습
+-           [클라이언트 디스크]
+                    ↓ (파일 읽기: File I/O)
+-           [클라이언트 메모리]
+                    ↓ (TCP 전송: Socket)
+========== 네트워크 (TCP/IP) ==========
+-                   ↑ (TCP 수신: Socket)
+            [서버 메모리]          
+                    ↑ (파일 쓰기: File I/O)
+            [서버 디스크]
+
 - 1.2.1. await file.read()는 네트워크 I/O 작업(클라이언트로부터 데이터 수신)이며, 
 - 1.2.2. with open(...)은 로컬 디스크 I/O 작업(디스크에 쓰기)
 
@@ -25,7 +37,7 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 | `contents =` | 끓은 수프를 그릇에 담기 (결과 저장) | 수프가 다 끓었을 때(파일 수신이 완료되었을 때), 셰프는 하던 일을 멈추고 돌아와 수프를 그릇(`contents`)에 담기. |
 | `with open(f"uploaded_files/{file.filename}", "wb") as f:` | 그릇을 꺼내 준비하기 (파일을 담을 공간 열기) | 수프를 담을 그릇(파일)을 준비하는 과정, `with open` 구문은 파일을 안전하게 열고 닫는 ‘자동 설거지 시스템’ 역할 |
 | `f.write(contents)` | 완성된 수프를 그릇에 붓기 (저장하기) | 끓인 수프(파일 내용)를 실제 그릇(저장소)에 담는 단계로, 이 과정을 통해 서버는 파일을 디스크에 안전하게 저장 |
-
+[소켓의 본질에 대한 이해](https://www.youtube.com/watch?v=3jQ2dBpiqPo)
 
 ### 2. FastAPI + UI with Database(Data Persisitency)
 #### 2.1. week05 >> main.py
