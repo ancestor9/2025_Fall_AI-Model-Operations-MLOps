@@ -3,7 +3,7 @@
 | 주차 | 핵심 내용 |
 |:----:|:-----------|
 | 1주차 | 네트워크 기초와 Python 사용 이유에 대한 설명.<br>LLM에 질문하기를 통해 IP 주소, Wi-Fi, TCP/UDP, 소켓 프로그래밍 등 네트워크 기본 개념 학습. |
-| 2주차 | 함수, 모듈, 라이브러리, 패키지 복습.<br>파이썬 http.server를 사용한 간단한 웹 서버(Web Server) 구현 및 이해. |
+| 2주차 | 함수, 모듈, 라이브러리, 패키지 복습.멀티쓰레드/멀티프로세싱 이해 실습<br>파이썬 http.server를 사용한 간단한 웹 서버(Web Server) 구현 및 이해. |
 | 3주차 | 네트워크 암호화 (SSL/TLS, 인코딩/디코딩, RSA 실습) 학습.<br>HTTP Request Message 구성과 MVC(Model-View-Controller) 디자인 패턴 이해. |
 | 4주차 | Modern Web 및 HTTP 구조 (Request Line, Headers, Body) 복습.<br>FastAPI 시작을 위한 환경 설정 (가상환경, FastAPI/uvicorn), Path, Query, Header, Body 및 Router 이해|
 | 5주차 | Python 중요 개념 (Class, Type Hinting, if `__name__ == "__main__"`) 설명.<br>리스트를 활용한 기본적인 CRUD 함수 (추가, 조회, 수정, 삭제) 구현. |
