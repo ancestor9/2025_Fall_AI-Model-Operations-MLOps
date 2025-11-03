@@ -14,17 +14,17 @@ $$\text{프로그램 } (\text{str}) \xleftarrow{\text{Text I/O}} \text{버퍼} (
 - [Reading and Writing Files in Python ](https://realpython.com/read-write-files-python/)
 - [Python i/o stream](https://docs.python.org/ko/3.13/library/io.html)
   
-#### 1.2. file_upload.py로 비동기 실습하기
+#### 1.2. file_upload.py로 비동기 실습하기 (File과 Socket 이해)
 ##### Server-Client 파일 업로드 > 전송 > 읽고 > 쓰기 이론적 이해 및 실습
-[클라이언트 디스크]
-   ↓ (파일 읽기: File I/O)
-[클라이언트 메모리]
-   ↓ (TCP 전송: Socket)
+-           [클라이언트 디스크]
+                    ↓ (파일 읽기: File I/O)
+-           [클라이언트 메모리]
+                    ↓ (TCP 전송: Socket)
 ========== 네트워크 (TCP/IP) ==========
-   ↑ (TCP 수신: Socket)
-[서버 메모리]
-   ↑ (파일 쓰기: File I/O)
-[서버 디스크]
+-                   ↑ (TCP 수신: Socket)
+            [서버 메모리]          
+                    ↑ (파일 쓰기: File I/O)
+            [서버 디스크]
 
 - 1.2.1. await file.read()는 네트워크 I/O 작업(클라이언트로부터 데이터 수신)이며, 
 - 1.2.2. with open(...)은 로컬 디스크 I/O 작업(디스크에 쓰기)
