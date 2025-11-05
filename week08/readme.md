@@ -5,7 +5,7 @@
 -     FastAPI_ngrok.ipynb(Colab), FastAPI_ngrok.py
 [Using ngrok with FastAPI](https://ngrok.com/docs/using-ngrok-with/fastAPI)
 
-### 발표하기 (20분)
+## 개인별 발표하기 (50분)
 - 마케팅, 제조, 금융 부문에서 서비스를 만들고 서비스를 지원하기 위한 시스템 구조도를 설명하라
 ![마케팅캠페인 시스템구조도](https://raw.githubusercontent.com/ancestor9/2025_Fall_AI-Model-Operations-MLOps/main/week08/campaign_manegemnet.png)
 
