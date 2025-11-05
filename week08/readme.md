@@ -3,6 +3,10 @@
 <img src ="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*RYeoECM1Xrx8eMU1M7_DGw.png">
 ### FastAPI 프레임워크로 웹 애플리케이션을 만들어 ngrok이라는 도구를 이용해 외부 인터넷에 자동으로 공개하는 코드
 -     FastAPI_ngrok.ipynb(Colab), FastAPI_ngrok.py
+
+### 발표하기 (20분)
+- 마케팅, 제조, 금융 부문에서 서비스를 만들고 서비스를 지원하기 위한 시스템 구조도를 설명하라
+  
 [Using ngrok with FastAPI](https://ngrok.com/docs/using-ngrok-with/fastAPI)
 ### 과제 수행하기 
 #### 1.1. Task 2 : 도서관 만들기 (도ㅓ관 --> 챆꽂이 --> 책)
