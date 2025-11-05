@@ -11,7 +11,7 @@
 | 6주차_하브루타 | Iris 데이터로 scikitlearn 분류모델로 예측, 예측모형을 저장하여 FastAPI를 벡엔드로 gradio UI에서 입력데이터를 바탕으로 예측하기 실습|
 | 7주차 |  Python I/O (Text, Buffered, Raw binary files) 세 가지 방식 stream 객체 실습, File=Socket, sqlite3를 이용한 CRUD 실습 진행, Dependency Injection |
 | 7주차_하브루타 | Microsoft Builder AdventuresSales 데이터를 바탕으로 시각화 하기 |
-| 8주차 | Streamlit UI + FastAPI, data_cache, session, ngrok, Monolithic/Microservices 아키텍처 설명. |
+| 8주차 | Streamlit UI + FastAPI, data_cache, session, [Using ngrok with FastAPI](https://ngrok.com/docs/using-ngrok-with/fastAPI), Monolithic/Microservices 아키텍처 설명. |
 | 8주차_하브르타 | ChinookDB 바탕으로 혹은 도서관관리시스템 만들기 MVC, Monolithic/Microservices 아키텍처 실습. |
 | 9주차 | main, model, database 등 MVC 구조의 모듈화된 코드 실습, https://www.youtube.com/watch?v=OJIR1pA7Ceo&si=5Y6Vw3drbFRhXHX_, https://www.youtube.com/watch?v=ip87CHxtoJY&si=rOaVfFoxhIx5UmcQ |
 | 9주차_하브르타 | 생성형 AI gemini로 chatbot, RAG 실습, 구조화된 직렬화된 데이터 구조(Pydantic) |
