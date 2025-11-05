@@ -3,7 +3,7 @@
 <img src ="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*RYeoECM1Xrx8eMU1M7_DGw.png">
 - FastAPI 프레임워크로 웹 애플리케이션을 만들어 ngrok이라는 도구를 이용해 외부 인터넷에 자동으로 공개하는 코드
 -     FastAPI_ngrok.ipynb(Colab), FastAPI_ngrok.py
-      [Using ngrok with FastAPI](https://ngrok.com/docs/using-ngrok-with/fastAPI)
+-     [Using ngrok with FastAPI](https://ngrok.com/docs/using-ngrok-with/fastAPI)
 ### 과제 수행하기 
 #### 1.1. Task 2 : 도서관 만들기 (도ㅓ관 --> 챆꽂이 --> 책)
 - (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
