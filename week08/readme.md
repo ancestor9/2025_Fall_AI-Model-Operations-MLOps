@@ -1,7 +1,8 @@
 ## Streamlit(Front End) - FastAPI(Back End)
 [streamlit 배우기](https://streamlit.io/#install)
 <img src ="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*RYeoECM1Xrx8eMU1M7_DGw.png">
-
+- FastAPI 웹 프레임워크를 사용해서 간단한 웹 애플리케이션을 만들고, 이 애플리케이션을 ngrok이라는 도구를 이용해 외부 인터넷에 자동으로 공개하는 역할을 하는 아주 깔끔한 구조
+- [Using ngrok with FastAPI](https://ngrok.com/docs/using-ngrok-with/fastAPI)
 ### 3. 과제 수행하기 
 #### 3.1. 요구사항 정의
 - (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
