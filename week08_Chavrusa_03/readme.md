@@ -2,8 +2,10 @@
 - 모듈에 대한 상대경로 이해
 - [Streamlit 실습](https://streamlit.io/#install) 
 
+## 🧱 실습 과제 A: Chinook Dashboard 구축 (MVC 아키텍처 기반)
+### prompt :"도서관 관리 시스템을 fasrAPI, sqlite3, streamlit를 사용하여 만들려고한다." --> 이후 팁별로 진행하여 과제 완성하기
 
-## 🧱 실습 과제: Chinook Dashboard 구축 (MVC 아키텍처 기반)
+## 🧱 실습 과제 B: Chinook Dashboard 구축 (MVC 아키텍처 기반)
 ### ✅ **프로젝트 구조 생성 및 Model (`sqlite3`) 구현**
 #### 📁 디렉토리 구조
 - Chinook_Dashboard/
