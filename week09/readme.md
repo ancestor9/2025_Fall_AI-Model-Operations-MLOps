@@ -4,7 +4,7 @@
 - (Requirements) sqlite3와 pydantic 을 사용하여 DB를 생성하고, 조회, 업데이트하는 fast API 코드를 생성하기
 - Databae 생성하기([sqlite3](https://docs.python.org/3/contents.html)), sqlalchemy 실행
 ##### supabase에서 테이블과 스키마를 생성하고 FastAPI로 조회/입력하기(main.py)
-
+[How to Add Authentication to Your Python App? | Supabase & Streamlit Tutorial](https://www.youtube.com/watch?v=OJIR1pA7Ceo&t=393s)
 #### 3.2. 핵심 요소
 - Pydantic 모델 (ItemCreate, ItemResponse): 데이터 유효성 검사 및 데이터 직렬화/역직렬화를 담당
 - SQLAlchemy 모델 (Item): 데이터베이스의 테이블 구조를 정의
