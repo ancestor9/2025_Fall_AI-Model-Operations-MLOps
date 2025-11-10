@@ -13,6 +13,9 @@ load_dotenv()
 
 # --- 1. Supabase 클라이언트 초기화 ---
 # .env 파일에서 URL과 Key를 가져옵니다.
+# supabse 대시보드에서 관련 project 클릭 후 조회하여 .env 파일을 만들기
+#SUPABASE_URL="당신의-Supabase-프로젝트-URL"
+#SUPABASE_KEY="당신의-Supabase-Anon-Key"
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
@@ -28,6 +31,18 @@ except Exception as e:
     raise
 
 app = FastAPI(title="FastAPI Supabase CRUD Example")
+
+# --- 1. 테이블 생성 (Supabase 대시보드에서 직접 수행) ---
+# 이 코드는 FastAPI 코드가 아니라, Supabase SQL Editor에서 실행
+# 테이블 이름: items
+# CREATE TABLE items (
+#     id SERIAL PRIMARY KEY,
+#     name VARCHAR(255) NOT NULL,
+#     description TEXT,
+#     price NUMERIC(10, 2)
+# );
+
+
 
 # --- 2. Pydantic 모델 정의 ---
 # Supabase DB에 생성된 'items' 테이블의 스키마와 일치해야 합니다.
