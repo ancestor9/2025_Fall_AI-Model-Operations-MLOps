@@ -5,5 +5,5 @@
 - 최적화와 Optimization.ipynb
 - [Master AI Concepts with Interactive Learning!](https://www.101ai.net/overview/basics)
 - [Visual explanations of core machine learning concepts](https://mlu-explain.github.io/)
-- [Google_machine-learning](https://developers.google.com/machine-learning?hl=ko)
+- [Google's Machine Learning Crash Course](https://developers.google.com/machine-learning?hl=ko)
 - [K-means_elbow](https://ml-visualized.com/chapter2/k_means.html)
