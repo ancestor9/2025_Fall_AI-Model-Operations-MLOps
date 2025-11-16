@@ -5,3 +5,4 @@
 - 최적화와 Optimization.ipynb
 - [Master AI Concepts with Interactive Learning!](https://www.101ai.net/overview/basics)
 - [Visual explanations of core machine learning concepts](https://mlu-explain.github.io/)
+- [K-means_elbow](https://ml-visualized.com/chapter2/k_means.html)
