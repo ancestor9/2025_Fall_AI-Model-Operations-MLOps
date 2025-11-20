@@ -6,7 +6,7 @@
 - RAG(Retrieval-Augmented Generation) '검색 증강 생성'을 의미하며, AI 모델이 답변을 생성할 때 외부 정보 소스에서 관련 내용을 검색하여 활용함으로써 정확성과 신뢰성을 높이는 기술
 
 #### Google Gemini API와 File Search API
-- 복잡한 LangChain이나 VectorDB 설정 없이도 내 파일 기반으로 답변하는 AI (RAG)를 만드는 방법
+- [복잡한 LangChain이나 VectorDB 설정](https://docs.langchain.com/oss/python/langchain/rag) 없이도 내 파일 기반으로 답변하는 AI (RAG)를 만드는 방법
 - Google의 새로운 File Search API를 사용하면 단 몇 줄의 파이썬 코드로 이 모든 것을 간단하게 구현
 - google_file_search.ipynb : RAG
 -     1. 특정 텍스트 파일(txt)을 업로드하고, (Gemini Grounding 기능)
