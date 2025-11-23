@@ -17,6 +17,7 @@
 | 9주차_하브르타 | 생성형 AI gemini로 chatbot, RAG 실습, 구조화된 직렬화된 데이터 구조(Pydantic) |
 | 10주차 | API Router Review와 HTTP Request/Response 심화.<br>Jinja2 템플릿, Bootstrap, FastAPI with DB 및 ngrok을 사용한 외부 접속 방법 학습. |
 | 10주차_하브루타 | HTML, CSS, JS와 Jinjatemplate를 사용하여 FastAPI: Modern Python Web Development 의 최종과제 만들기 |
+| ~~ 2026년 1학기 | Capstone Design에 대하여 |
 ## 주요 내용
 #### 1. 네트워크 통신 (9시간)
 -     HTTP, TCP/IP, Client-Server Architecture, - socket (IP + port),
