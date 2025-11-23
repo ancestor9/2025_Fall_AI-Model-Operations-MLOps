@@ -14,6 +14,7 @@
 ### 3. Jinja2
 #### "FastAPI를 이용한 랜덤 색상 생성기(Random Color Generator)" 웹 애플리케이션
 [How to Serve a Website With FastAPI Using HTML and Jinja2](https://realpython.com/fastapi-jinja2-template/?utm_source=rpnewsletter&utm_medium=email&utm_campaign=2025-11-21)
+- main.py 파일과 FastAPI Color Generator.pdf 파일을 참고하여 시스템을 완성하기
 - [jinja-templating](https://realpython.com/primer-on-jinja-templating/)
   -     templates 폴더 > message1.txt, message2.txt, results.html, results_if.html
         jinja2_excercise.py (jinja2.py 사용은 안됨)
