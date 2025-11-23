@@ -6,8 +6,6 @@
       5. main_router_controller.py (Router)
 
 ### Jinja2,  HTTP Request, Response
-- [jinja2](https://jinja.palletsprojects.com/en/stable/api/#basics)
-- jinja2_excerise.py
 #### 1. main.py 파일과 FastAPI Color Generator.pdf 파일을 참고하여 시스템을 완성하기
 #### 2. HTMLResponse
 -     HTML 응답을 전문으로 처리하는 도구 상자(설계도) ===> class HTMLResponse
@@ -18,7 +16,8 @@
 [How to Serve a Website With FastAPI Using HTML and Jinja2](https://realpython.com/fastapi-jinja2-template/?utm_source=rpnewsletter&utm_medium=email&utm_campaign=2025-11-21)
 - [jinja-templating](https://realpython.com/primer-on-jinja-templating/)
   -     templates 폴더 > message1.txt, message2.txt, results.html, results_if.html
-        jinja2_excercise.py (jinja2.py 사용은 안됨)
+        jinja2_excercise.py
+    [jinja2](https://jinja.palletsprojects.com/en/stable/api/#basics)
 - [Fast API with Templates](https://fastapi.tiangolo.com/advanced/templates/)
   -     templates 폴더의 index.html, static 폴더의 style.css --> rendering
 
