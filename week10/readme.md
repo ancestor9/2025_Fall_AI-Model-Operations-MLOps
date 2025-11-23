@@ -1,3 +1,7 @@
+### 코드 설명
+-       1. main_async.py (비동기방식, non-blocking 방식 이해)
+
+
 ### Jinja2,  HTTP Request, Response
 - [jinja2](https://jinja.palletsprojects.com/en/stable/api/#basics)
 - jinja2_excerise.py
