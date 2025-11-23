@@ -5,6 +5,10 @@
 - main_router_controller.py, controller 폴더
   
 ### 2. HTTP Request, Response 
+-     HTML 응답을 전문으로 처리하는 도구 상자(설계도) ===> class HTMLResponse
+      FastAPI는 기본적으로 데이터를 JSON 형식(딕셔너리 {key: value} 형태)으로 응답하도록 설정
+      하지만 우리가 웹 브라우저에 예쁜 화면(HTML)을 보여주고 싶을 때는 JSON이 아니라 HTML 코드를 보내야 함
+      이때 사용하는 것이 HTMLResponse 클래스
 - main_request.py, main_response.py
 
 ### 3. Jinja2
