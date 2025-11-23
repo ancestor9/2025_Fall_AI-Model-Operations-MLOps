@@ -19,6 +19,8 @@
 - main_request.py, main_response.py
 
 ## Ever Tried, Ever Failed ?
+- React와 TypeScript에는 Jinja2와 같은 '템플릿 엔진'은 없지만, 그보다 훨씬 강력한 JSX (또는 TSX)라는 문법
+-       Jinja2는 HTML 텍스트 안에 구멍을 뚫고 데이터를 채워 넣는 방식이라면, React는 JavaScript(TypeScript) 로직 자체가 HTML 구조를 만들어내는 방식
 - 내가 만들고 싶은 것(my neeeds, ploblem, requirements, etc)을 정리하고 colab에서 gemini LLM 과 재미나이게 코딩(FastAPI_ngrok.ipynb)
 - Google AI Studio --> Vibe Code GenAI App :
 -     Scikit-learn의 Iris 예측모형을 gemini로 만들기
