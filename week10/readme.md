@@ -1,4 +1,6 @@
-### Jinja2,  HTTP Request, Response 
+### Jinja2,  HTTP Request, Response
+- [jinja2](https://jinja.palletsprojects.com/en/stable/api/#basics)
+- jinja2_excerise.py
 #### 1. main.py 파일과 FastAPI Color Generator.pdf 파일을 참고하여 시스템을 완성하기
 #### 2. HTMLResponse
 -     HTML 응답을 전문으로 처리하는 도구 상자(설계도) ===> class HTMLResponse
