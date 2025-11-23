@@ -21,9 +21,6 @@
         jinja2_excercise.py (jinja2.py 사용은 안됨)
 - [Fast API with Templates](https://fastapi.tiangolo.com/advanced/templates/)
   -     templates 폴더의 index.html, static 폴더의 style.css --> rendering
-#### 4. API Router Review (optional)
-- main_router_controller.py, controller 폴더
-- main_request.py, main_response.py
 
 ## Ever Tried, Ever Failed ?
 - React와 TypeScript에는 Jinja2와 같은 '템플릿 엔진'은 없지만, 그보다 훨씬 강력한 JSX (또는 TSX)라는 문법
