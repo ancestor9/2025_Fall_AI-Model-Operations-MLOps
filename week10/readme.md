@@ -16,7 +16,7 @@
 - main_router_controller.py, controller 폴더
 - main_request.py, main_response.py
 
-### Ever Tried, Ever Failed ?
+## Ever Tried, Ever Failed ?
 - 내가 만들고 싶은 것(my neeeds, ploblem, requirements, etc)을 정리하고 colab에서 gemini LLM 과 재미나이게 코딩(FastAPI_ngrok.ipynb)
 - Google AI Studio --> Vibe Code GenAI App :
 -     Scikit-learn의 Iris 예측모형을 gemini로 만들기
