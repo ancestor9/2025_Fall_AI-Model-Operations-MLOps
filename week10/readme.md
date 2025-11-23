@@ -1,7 +1,7 @@
 ### 0. Google AI Studio --> Vibe Code GenAI App
 - Scikit-learn의 Iris 예측모형을 gemini로 만들기
 
-### 1. API Router Review
+### 1. API Router Review (optional)
 - main_router_controller.py, controller 폴더
   
 ### 2. HTTP Request, Response 
