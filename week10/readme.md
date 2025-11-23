@@ -12,6 +12,7 @@
 - main_request.py, main_response.py
 
 ### 3. Jinja2
+[How to Serve a Website With FastAPI Using HTML and Jinja2](https://realpython.com/fastapi-jinja2-template/?utm_source=rpnewsletter&utm_medium=email&utm_campaign=2025-11-21)
 - [jinja-templating](https://realpython.com/primer-on-jinja-templating/)
   -     templates 폴더 > message1.txt, message2.txt, results.html, results_if.html
         jinja2_excercise.py (jinja2.py 사용은 안됨)
