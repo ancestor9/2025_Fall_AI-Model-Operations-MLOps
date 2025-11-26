@@ -7,9 +7,12 @@
 
 #### Google Gemini API와 File Search API
 - [복잡한 LangChain이나 VectorDB 설정 없이도](https://docs.langchain.com/oss/python/langchain/rag) 내 파일 기반으로 답변하는 AI (RAG)를 만드는 방법
--      1. Langchain_rag_geminiAPI.ipynb (Langchain을 기반으로 RAG 코딩)
+-      1. Langchain_rag_geminiAPI.ipynb : Langchain을 기반으로 RAG 코딩
+      -    1.1. Indexing: a pipeline for ingesting data from a source and indexing it.
+           1.2. Retrieval: the actual RAG process, which takes the user query at run time and retrieves the relevant data from the index,
+           1.3. Augmentation & Generation: then passes that to the model generating response.
 - Google의 새로운 File Search API를 사용하면 단 몇 줄의 파이썬 코드로 이 모든 것을 간단하게 구현
 -       2. google_file_search.ipynb : RAG
-      -     2.1. 특정 텍스트 파일(txt)을 업로드하고, (Gemini Grounding 기능)
-            2.2. AI가 오직 그 파일의 내용만을 '검색'하고 '참고'하여
-            2.3. 질문에 답변하도록 만드는 전체 과정을 코드를 실행하며 단계별로 구현
+      -    2.1. 특정 텍스트 파일(txt)을 업로드하고, (Gemini Grounding 기능)
+           2.2. AI가 오직 그 파일의 내용만을 '검색'하고 '참고'하여
+           2.3. 질문에 답변하도록 만드는 전체 과정을 코드를 실행하며 단계별로 구현
