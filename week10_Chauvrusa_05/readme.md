@@ -39,7 +39,7 @@
 
 
 ### Extra code:
-- [google ADK; AI 에이전트를 개발/배포하기 위한 유연/모듈화된 오픈소스 프레임워크](https://google.github.io/adk-docs/get-started/python/)
+- [google ADK: AI 에이전트를 개발/배포하기 위한 유연/모듈화된 오픈소스 프레임워크](https://google.github.io/adk-docs/get-started/python/)
 -     1. 가상환경 만들기 (python -m venv myenv)
       2. AKD 인스톨하기 (pip install google-adk)
       3. 프로젝트만들기 (adk create my_agent)
