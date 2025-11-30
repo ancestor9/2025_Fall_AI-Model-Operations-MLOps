@@ -38,7 +38,8 @@
 | CRUD 매핑 | RESTful API 설계 | 엔드포인트 매핑 | Create: POST /resources/ → 201 Created<br>Read (All): GET /resources/<br>Read (One): GET /resources/{id} → 없으면 404 Not Found<br>Update: PUT /resources/{id}<br>Delete: DELETE /resources/{id} → 204 No Content<br>예외 처리: HTTPException(status_code=404), IntegrityError(중복 이름 등) 처리 |
 
 
-### Extra code:
+### Extra Learnings:
+- [Notebook LLM : RAG 만들기](https://notebooklm.google.com/)
 - [google ADK: AI 에이전트를 개발/배포하기 위한 유연/모듈화된 오픈소스 프레임워크](https://google.github.io/adk-docs/get-started/python/)
 -     1. 가상환경 만들기 (python -m venv myenv)
       2. AKD 인스톨하기 (pip install google-adk)
