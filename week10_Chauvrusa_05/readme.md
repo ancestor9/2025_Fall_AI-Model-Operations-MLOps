@@ -41,8 +41,8 @@
 ### Extra code:
 - [google ADK; AI 에이전트를 개발/배포하기 위한 유연/모듈화된 오픈소스 프레임워크](https://google.github.io/adk-docs/get-started/python/)
 -     1. 가상환경 만들기 (python -m venv myenv)
--     2. AKD 인스톨하기 (pip install google-adk)
--     3. 프로젝트만들기 (adk create my_agent)
--     4. model ='gemini-2.5-flash'를 사용하여 동작하기, CLI / Web 환경에서
+      2. AKD 인스톨하기 (pip install google-adk)
+      3. 프로젝트만들기 (adk create my_agent)
+      4. model ='gemini-2.5-flash'를 사용하여 동작하기, CLI / Web 환경에서
 - [구글 ADK (Agent Development Kit) 10분만에 이해하기! LangGraph 대항마일까?](https://www.youtube.com/watch?v=iZdqqv-dIYU&t=309s)
 
