@@ -37,3 +37,12 @@
 | Router (routers/) | creature.py, explorer.py | API 엔드포인트 정의 | APIRouter 사용, 경로 분리 및 태그 명시<br>모든 엔드포인트 함수는 get_db_connection을 Depends로 주입 |
 | CRUD 매핑 | RESTful API 설계 | 엔드포인트 매핑 | Create: POST /resources/ → 201 Created<br>Read (All): GET /resources/<br>Read (One): GET /resources/{id} → 없으면 404 Not Found<br>Update: PUT /resources/{id}<br>Delete: DELETE /resources/{id} → 204 No Content<br>예외 처리: HTTPException(status_code=404), IntegrityError(중복 이름 등) 처리 |
 
+
+### Extra code:
+- [google ADK; AI 에이전트를 개발/배포하기 위한 유연/모듈화된 오픈소스 프레임워크](https://google.github.io/adk-docs/get-started/python/)
+-     1. 가상환경 만들기 (python -m venv myenv)
+-     2. AKD 인스톨하기 (pip install google-adk)
+-     3. 프로젝트만들기 (adk create my_agent)
+-     4. model ='gemini-2.5-flash'를 사용하여 동작하기, CLI / Web 환경에서
+- [구글 ADK (Agent Development Kit) 10분만에 이해하기! LangGraph 대항마일까?](https://www.youtube.com/watch?v=iZdqqv-dIYU&t=309s)
+
