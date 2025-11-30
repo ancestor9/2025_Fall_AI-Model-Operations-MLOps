@@ -1,4 +1,4 @@
-### 가장 최소한의 기능만 갖춘 FastAPI 백엔드와 HTML/JavaScript 프론트엔드를 사용하여 Gemini 챗봇을 구현하는 모듈화된 코드를 제시합니다.
+### 가장 최소한의 기능만 갖춘 FastAPI 백엔드와 HTML/JavaScript 프론트엔드를 사용하여 Gemini 챗봇을 구현하는 모듈화된 코드
 
 - main_gemini.py: FastAPI 백엔드 (Gemini API 호출 처리)
 -       index.html: HTML 프론트엔드 (사용자 인터페이스 및 API 호출)
